@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Chamoth Event Organizers</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/Pictures/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        * { font-family: 'DM Sans', sans-serif; }
+
+        :root {
+            --green-dark:  #0f3d1f;
+            --green-deep:  #0a2e16;
+            --green-mid:   #1a5c30;
+            --green-light: rgba(15,61,31,0.08);
+        }
+       
+
+        /* ── NAVBAR ── */
+        .kmc-nav {
+            background: var(--green-dark);
+            padding: 0 2.5rem;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .kmc-nav span{
+            font-family:'Sans Serif Collection'
+        }
+
+        .kmc-brand {
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .kmc-brand-main {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+            line-height: 1.1;
+        }
+
+        .kmc-brand-sub {
+            font-size: 0.58rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.45);
+            display: block;
+        }
+
+        
+        .kmc-nav-right {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-left: auto;
+        }
+
+        .kmc-nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+       
+        .kmc-nav-links a {
+            position: relative;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 0;
+            transition: color 0.2s, transform 0.2s;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .kmc-nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 14px;
+            right: 14px;
+            height: 2px;
+            background: #4ade80;
+            border-radius: 2px;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .kmc-nav-links a:hover {
+            color: white;
+            transform: translateY(-1px);
+            background: transparent;
+        }
+
+        .kmc-nav-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .kmc-nav-links a.active {
+            color: white;
+            font-weight: 600;
+        }
+
+        .kmc-nav-links a.active::after {
+            transform: scaleX(1);
+            background: #86efac;
+        }
+
+        .nav-divider {
+            width: 1px;
+            height: 22px;
+            background: rgba(255,255,255,0.15);
+            margin: 0 8px;
+            flex-shrink: 0;
+        }
+
+        .kmc-user-badge {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.85);
+            background: rgba(255,255,255,0.1);
+            padding: 6px 14px;
+            border-radius: 100px;
+            margin-left: 8px;
+        }
+
+        .kmc-user-badge i {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.55);
+        }
+
+        .kmc-user-badge .role-tag {
+            font-size: 0.6rem;
+            color: rgba(255,255,255,0.45);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .btn-nav-login {
+            position: relative;
+            
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 20px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+            margin-left: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            overflow: hidden;
+        }
+
+            .btn-nav-login::after {
+                content: '';
+                position: absolute;
+                bottom: 4px;
+                left: 20px;
+                right: 20px;
+                height: 2px;
+                background: #4ade80;
+                border-radius: 2px;
+                transform: scaleX(0);
+                transform-origin: right center;
+                transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .btn-nav-login:hover {
+                
+                color: white;
+            }
+
+                .btn-nav-login:hover::after {
+                    transform: scaleX(1);
+                }
+        .btn-nav-logout {
+            background: transparent;
+            color: rgba(255,255,255,0.7);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 8px;
+            padding: 7px 16px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            margin-left: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .btn-nav-logout:hover {
+            background: rgba(255,255,255,0.08);
+            color: white;
+            border-color: rgba(255,255,255,0.45);
+        }
+
+       
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            margin-top: 70px;
+            flex: 1 0 auto;
+        }
+
+        .kmc-footer {
+            flex-shrink: 0;
+            background: var(--green-deep);
+            border-top: 1px solid rgba(255,255,255,0.07);
+            padding: 0 2.5rem;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            font-family: 'Sans Serif Collection'
+        }
+
+        .footer-inner {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+       
+        .footer-brand {
+            font-family: 'Sans Serif Collection'
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.55);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+      
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-nav {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-nav a {
+            color: rgba(255,255,255,0.45);
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 5px;
+            transition: color 0.18s;
+        }
+
+        .footer-nav a:hover { color: rgba(255,255,255,0.85); }
+
+        .footer-sep {
+            color: rgba(255,255,255,0.15);
+            font-size: 0.65rem;
+        }
+
+        .footer-copy {
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.25);
+            white-space: nowrap;
+            border-left: 1px solid rgba(255,255,255,0.1);
+            padding-left: 1.5rem;
+        }
+
+        .kmc-hamburger {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.3rem;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+     
+        .kmc-user-menu {
+            position: relative;
+            margin-left: 10px;
+        }
+
+        .kmc-user-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 8px;
+            padding: 7px 14px;
+            color: rgba(255,255,255,0.85);
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+            .kmc-user-btn:hover {
+                background: rgba(255,255,255,0.16);
+                border-color: rgba(255,255,255,0.35);
+            }
+
+            .kmc-user-btn .role-tag {
+                font-size: 0.6rem;
+                color: rgba(255,255,255,0.45);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+            }
+
+            .kmc-user-btn .chevron-icon {
+                font-size: 0.65rem;
+                color: rgba(255,255,255,0.5);
+                transition: transform 0.2s;
+            }
+
+        .kmc-user-menu.open .chevron-icon {
+            transform: rotate(180deg);
+        }
+
+        .kmc-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            min-width: 190px;
+            overflow: hidden;
+            z-index: 1100;
+            animation: dropDown 0.18s cubic-bezier(0.4,0,0.2,1);
+        }
+
+        .kmc-user-menu.open .kmc-dropdown {
+            display: block;
+        }
+
+        @@keyframes dropDown {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .kmc-drop-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 16px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            transition: background 0.15s;
+        }
+
+            .kmc-drop-item:hover {
+                background: #f5f5f5;
+                color: #0f3d1f;
+            }
+
+            .kmc-drop-item i {
+                font-size: 0.8rem;
+                color: #888;
+                width: 14px;
+            }
+
+            .kmc-drop-item:hover i {
+                color: #0f3d1f;
+            }
+
+        .kmc-drop-divider {
+            height: 1px;
+            background: #f0f0f0;
+            margin: 2px 0;
+        }
+
+        .kmc-drop-logout {
+            color: #c0392b;
+        }
+
+            .kmc-drop-logout:hover {
+                background: #fef2f2;
+                color: #c0392b;
+            }
+
+            .kmc-drop-logout i {
+                color: #c0392b;
+            }
+
+   
+    </style>
+    @await RenderSectionAsync("Styles", required: false)
+  
+</head>
+<body>
+
+    @{
+        var UserEmail = Context.Session.GetString("Email");
+        var UserRole = Context.Session.GetString("Role");
+    }
+    @await Html.PartialAsync("_AuthModal")
+  
+    <nav class="kmc-nav">
+        <a href="/" class="kmc-brand">
+            <span class="kmc-brand-main">Chamoth Event Organizers</span>
+            
+        </a>
+
+        <div class="kmc-nav-right">
+            <ul class="kmc-nav-links" id="navLinks">
+                <li><a href="/" id="nav-home">Home</a></li>
+                <li><a href="/About" id="nav-about">About Us</a></li>
+                <li><a href="/OurEvents" id="nav-events">Our Events</a></li>
+             
+            </ul>
+
+            <div class="nav-divider"></div>
+
+            @if (!string.IsNullOrEmpty(UserRole))
+            {
+                <div class="kmc-user-menu" id="userMenuWrapper">
+                    <button class="kmc-user-btn" onclick="toggleUserMenu(event)">
+                        @if (UserRole == "Organizer")
+                        {
+                            <i class="fa-solid fa-id-badge"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-solid fa-user"></i>
+                        }
+                        <span>Hello @UserRole,  @UserEmail</span>
+                        
+                        <i class="fa-solid fa-chevron-down chevron-icon"></i>
+                    </button>
+                    <div class="kmc-dropdown" id="userDropdown">
+                        @if (UserRole == "Organizer")
+                        {
+                            <a href="/EventDashboard" class="kmc-drop-item">
+                                <i class="fa-solid fa-gauge"></i> My Dashboard
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="/MyRegistrations" class="kmc-drop-item">
+                                <i class="fa-solid fa-calendar-check"></i> My Registrations
+                            </a>
+                        }
+                        <div class="kmc-drop-divider"></div>
+                        <a href="/Logout" class="kmc-drop-item kmc-drop-logout">
+							<i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <a href="javascript:void(0)" onclick="openAuthModal('signin')" class="btn-nav-login">
+                    <i class="fa-solid fa-user"></i> Sign In
+                </a>
+            }
+        </div>
+
+        <button class="kmc-hamburger" onclick="toggleMobileNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+  
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="kmc-footer">
+        <div class="footer-inner">
+
+            
+            <span class="footer-brand">Chamoth Event Organizers</span>
+
+            
+            <div class="footer-right">
+            <ul class="footer-nav">
+                <li><a href="/">Home</a></li>
+                <li><span class="footer-sep">|</span></li>
+                <li><a href="/About">About Us</a></li>
+                <li><span class="footer-sep">|</span></li>
+                <li><a href="/OurEventst">Our Events</a></li>
+            </ul>
+                  
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script id="login">
+        
+        const path = window.location.pathname.toLowerCase();
+        const navMap = {
+            '/':           'nav-home',
+            '/about':      'nav-about',
+            '/kmcevent':   'nav-events',
+            '/kmcorganizerdashboard': 'nav-dashboard'
+        };
+        const activeId = navMap[path];
+        if (activeId) document.getElementById(activeId)?.classList.add('active');
+
+        
+        function toggleMobileNav() {
+            const links = document.getElementById('navLinks');
+            links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+            links.style.flexDirection = 'column';
+            links.style.position = 'absolute';
+            links.style.top = '70px';
+            links.style.right = '0';
+            links.style.left = '0';
+            links.style.background = '#0f3d1f';
+            links.style.padding = '1rem';
+            links.style.borderTop = '1px solid rgba(255,255,255,0.1)';
+        }
+                function toggleUserMenu(e) {
+            e.stopPropagation();
+            document.getElementById('userMenuWrapper').classList.toggle('open');
+        }
+        document.addEventListener('click', function() {
+            const wrapper = document.getElementById('userMenuWrapper');
+            if (wrapper) wrapper.classList.remove('open');
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

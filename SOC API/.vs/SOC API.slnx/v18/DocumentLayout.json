@@ -1,0 +1,445 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\controllers\\publiccitizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\controllers\\publiccitizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\data\\publiccitizenrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\data\\publiccitizenrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\data\\eventregisterrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\data\\eventregisterrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\data\\eventrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\data\\eventrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\controllers\\eventregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\controllers\\eventregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\model\\eventregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\model\\eventregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\model\\publiccitizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\model\\publiccitizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\model\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\model\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\profile\\publiccitizenprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\profile\\publiccitizenprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\dto\\publiccitizendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\dto\\publiccitizendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\dto\\eventregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\dto\\eventregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\dto\\organizerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\dto\\organizerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\data\\organizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\data\\organizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\profile\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\profile\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\profile\\organizerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\profile\\organizerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\profile\\eventregisterprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\profile\\eventregisterprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|c:\\users\\whiteaways\\desktop\\assignment handouts\\chamoth nilushanka\\soc api\\soc api\\migrations\\20260405155802_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AD18466-E671-687F-0218-1B3FC38FDB86}|SOC API\\SOC API.csproj|solutionrelative:soc api\\migrations\\20260405155802_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1013369848:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1909115015:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "SOC API\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\EventController.cs",
+              "RelativeToolTip": "SOC API\\Controllers\\EventController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:36:46.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PublicCitizenController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\PublicCitizenController.cs",
+              "RelativeDocumentMoniker": "SOC API\\Controllers\\PublicCitizenController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\PublicCitizenController.cs",
+              "RelativeToolTip": "SOC API\\Controllers\\PublicCitizenController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T14:06:26.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\appsettings.json",
+              "RelativeDocumentMoniker": "SOC API\\appsettings.json",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\appsettings.json",
+              "RelativeToolTip": "SOC API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-28T15:50:53.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PublicCitizenRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\PublicCitizenRepo.cs",
+              "RelativeDocumentMoniker": "SOC API\\Data\\PublicCitizenRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\PublicCitizenRepo.cs",
+              "RelativeToolTip": "SOC API\\Data\\PublicCitizenRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T14:06:06.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\EventRepo.cs",
+              "RelativeDocumentMoniker": "SOC API\\Data\\EventRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\EventRepo.cs",
+              "RelativeToolTip": "SOC API\\Data\\EventRepo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T14:07:02.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventRegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\EventRegisterController.cs",
+              "RelativeDocumentMoniker": "SOC API\\Controllers\\EventRegisterController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\EventRegisterController.cs",
+              "RelativeToolTip": "SOC API\\Controllers\\EventRegisterController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwEYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T14:08:16.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventRegisterRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\EventRegisterRepo.cs",
+              "RelativeDocumentMoniker": "SOC API\\Data\\EventRegisterRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\EventRegisterRepo.cs",
+              "RelativeToolTip": "SOC API\\Data\\EventRegisterRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T14:06:36.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EventRegister.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\EventRegister.cs",
+              "RelativeDocumentMoniker": "SOC API\\Model\\EventRegister.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\EventRegister.cs",
+              "RelativeToolTip": "SOC API\\Model\\EventRegister.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T16:35:41.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Organizer.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\Organizer.cs",
+              "RelativeDocumentMoniker": "SOC API\\Model\\Organizer.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\Organizer.cs",
+              "RelativeToolTip": "SOC API\\Model\\Organizer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T16:52:51.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\Event.cs",
+              "RelativeDocumentMoniker": "SOC API\\Model\\Event.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\Event.cs",
+              "RelativeToolTip": "SOC API\\Model\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T16:25:47.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PublicCitizen.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\PublicCitizen.cs",
+              "RelativeDocumentMoniker": "SOC API\\Model\\PublicCitizen.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Model\\PublicCitizen.cs",
+              "RelativeToolTip": "SOC API\\Model\\PublicCitizen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T16:36:13.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SOC API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SOC API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:56:44.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20260405155802_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Migrations\\20260405155802_InitialCreate.cs",
+              "RelativeDocumentMoniker": "SOC API\\Migrations\\20260405155802_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Migrations\\20260405155802_InitialCreate.cs",
+              "RelativeToolTip": "SOC API\\Migrations\\20260405155802_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T15:58:02.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Program.cs",
+              "RelativeDocumentMoniker": "SOC API\\Program.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Program.cs",
+              "RelativeToolTip": "SOC API\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T15:46:39.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PublicCitizenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\PublicCitizenDTO.cs",
+              "RelativeDocumentMoniker": "SOC API\\DTO\\PublicCitizenDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\PublicCitizenDTO.cs",
+              "RelativeToolTip": "SOC API\\DTO\\PublicCitizenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:47:24.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PublicCitizenProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\PublicCitizenProfile.cs",
+              "RelativeDocumentMoniker": "SOC API\\Profile\\PublicCitizenProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\PublicCitizenProfile.cs",
+              "RelativeToolTip": "SOC API\\Profile\\PublicCitizenProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T15:42:23.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EventRegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\EventRegisterDTO.cs",
+              "RelativeDocumentMoniker": "SOC API\\DTO\\EventRegisterDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\EventRegisterDTO.cs",
+              "RelativeToolTip": "SOC API\\DTO\\EventRegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:48:05.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrganizerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\OrganizerDTO.cs",
+              "RelativeDocumentMoniker": "SOC API\\DTO\\OrganizerDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\OrganizerDTO.cs",
+              "RelativeToolTip": "SOC API\\DTO\\OrganizerDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:22:29.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EventDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\EventDTO.cs",
+              "RelativeDocumentMoniker": "SOC API\\DTO\\EventDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\DTO\\EventDTO.cs",
+              "RelativeToolTip": "SOC API\\DTO\\EventDTO.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:36:56.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrganizerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\OrganizerRepo.cs",
+              "RelativeDocumentMoniker": "SOC API\\Data\\OrganizerRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Data\\OrganizerRepo.cs",
+              "RelativeToolTip": "SOC API\\Data\\OrganizerRepo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T14:07:01.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrganizerController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\OrganizerController.cs",
+              "RelativeDocumentMoniker": "SOC API\\Controllers\\OrganizerController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Controllers\\OrganizerController.cs",
+              "RelativeToolTip": "SOC API\\Controllers\\OrganizerController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwCQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T15:05:15.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EventProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\EventProfile.cs",
+              "RelativeDocumentMoniker": "SOC API\\Profile\\EventProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\EventProfile.cs",
+              "RelativeToolTip": "SOC API\\Profile\\EventProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T15:17:51.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrganizerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\OrganizerProfile.cs",
+              "RelativeDocumentMoniker": "SOC API\\Profile\\OrganizerProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\OrganizerProfile.cs",
+              "RelativeToolTip": "SOC API\\Profile\\OrganizerProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T15:42:20.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SOC API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SOC API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwBMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-28T15:51:04.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EventRegisterProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\EventRegisterProfile.cs",
+              "RelativeDocumentMoniker": "SOC API\\Profile\\EventRegisterProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assignment Handouts\\Chamoth Nilushanka\\SOC API\\SOC API\\Profile\\EventRegisterProfile.cs",
+              "RelativeToolTip": "SOC API\\Profile\\EventRegisterProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T14:06:24.289Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

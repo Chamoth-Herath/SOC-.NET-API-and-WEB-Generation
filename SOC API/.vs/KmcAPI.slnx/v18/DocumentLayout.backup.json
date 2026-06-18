@@ -1,0 +1,573 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\controllers\\eventregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\controllers\\eventregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\controllers\\organizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\controllers\\participantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\controllers\\participantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\dto\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\profile\\participantprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\profile\\participantprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\profile\\organizerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\profile\\organizerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\profile\\eventregistrationprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\profile\\eventregistrationprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\profile\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\profile\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\data\\eventregistrationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\data\\eventregistrationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\dto\\eventregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\dto\\eventregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\model\\eventregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\model\\eventregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\model\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\model\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\model\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\model\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\dto\\participantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\dto\\participantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\dto\\organizerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\dto\\organizerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\data\\adminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\data\\adminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\data\\eventrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\data\\eventrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055536_FixRegistrationRelations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KmcAPI\\Migrations\\20260325055536_FixRegistrationRelations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\data\\organizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\data\\organizerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\data\\participantrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\data\\participantrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055127_FixRegistrationKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KmcAPI\\Migrations\\20260325055127_FixRegistrationKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260324223832_AddCurrentParticipantsToEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KmcAPI\\Migrations\\20260324223832_AddCurrentParticipantsToEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\kmcapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\kmcapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\migrations\\20260325055905_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\migrations\\20260325055905_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|c:\\users\\whiteaways\\desktop\\assigments\\hnd assigments\\sem 4\\soc\\kmc project\\kmcapi\\kmcapi\\migrations\\20260325192442_addeventplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D44CE1-278F-6748-1E31-9DC75CB35B1B}|KmcAPI\\KmcAPI.csproj|solutionrelative:kmcapi\\migrations\\20260325192442_addeventplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Event.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Model\\Event.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Event.cs",
+              "RelativeToolTip": "KmcAPI\\Model\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:53:08.996Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1013369848:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1909115015:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrganizerController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\OrganizerController.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Controllers\\OrganizerController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\OrganizerController.cs",
+              "RelativeToolTip": "KmcAPI\\Controllers\\OrganizerController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:06:36.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "KmcAPI\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T14:27:25.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Program.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Program.cs",
+              "RelativeToolTip": "KmcAPI\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAiwC4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T09:27:04.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventRegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\EventRegistrationController.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Controllers\\EventRegistrationController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\EventRegistrationController.cs",
+              "RelativeToolTip": "KmcAPI\\Controllers\\EventRegistrationController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:07:17.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\EventController.cs",
+              "RelativeToolTip": "KmcAPI\\Controllers\\EventController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwLoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T09:52:24.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "KmcAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T09:01:51.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ParticipantController.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\ParticipantController.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Controllers\\ParticipantController.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Controllers\\ParticipantController.cs",
+              "RelativeToolTip": "KmcAPI\\Controllers\\ParticipantController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:07:03.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EventDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\EventDTO.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\DTO\\EventDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\EventDTO.cs",
+              "RelativeToolTip": "KmcAPI\\DTO\\EventDTO.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwCAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:42:19.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ParticipantProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\ParticipantProfile.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Profile\\ParticipantProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\ParticipantProfile.cs",
+              "RelativeToolTip": "KmcAPI\\Profile\\ParticipantProfile.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:37:43.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrganizerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\OrganizerProfile.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Profile\\OrganizerProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\OrganizerProfile.cs",
+              "RelativeToolTip": "KmcAPI\\Profile\\OrganizerProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:37:17.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventRegistrationProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\EventRegistrationProfile.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Profile\\EventRegistrationProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\EventRegistrationProfile.cs",
+              "RelativeToolTip": "KmcAPI\\Profile\\EventRegistrationProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:40:49.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EventProfile.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\EventProfile.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Profile\\EventProfile.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Profile\\EventProfile.cs",
+              "RelativeToolTip": "KmcAPI\\Profile\\EventProfile.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:34:47.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EventRegistrationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\EventRegistrationRepo.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Data\\EventRegistrationRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\EventRegistrationRepo.cs",
+              "RelativeToolTip": "KmcAPI\\Data\\EventRegistrationRepo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:34:15.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EventRegistrationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\EventRegistrationDTO.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\DTO\\EventRegistrationDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\EventRegistrationDTO.cs",
+              "RelativeToolTip": "KmcAPI\\DTO\\EventRegistrationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:40:14.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EventRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\EventRegistration.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Model\\EventRegistration.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\EventRegistration.cs",
+              "RelativeToolTip": "KmcAPI\\Model\\EventRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:55:11.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Participant.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Participant.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Model\\Participant.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Participant.cs",
+              "RelativeToolTip": "KmcAPI\\Model\\Participant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:54:48.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Organizer.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Organizer.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Model\\Organizer.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Organizer.cs",
+              "RelativeToolTip": "KmcAPI\\Model\\Organizer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:53:59.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Admin.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Model\\Admin.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Model\\Admin.cs",
+              "RelativeToolTip": "KmcAPI\\Model\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T14:26:42.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ParticipantDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\ParticipantDTO.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\DTO\\ParticipantDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\ParticipantDTO.cs",
+              "RelativeToolTip": "KmcAPI\\DTO\\ParticipantDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:39:31.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrganizerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\OrganizerDTO.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\DTO\\OrganizerDTO.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\DTO\\OrganizerDTO.cs",
+              "RelativeToolTip": "KmcAPI\\DTO\\OrganizerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:39:08.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\AdminRepo.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Data\\AdminRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\AdminRepo.cs",
+              "RelativeToolTip": "KmcAPI\\Data\\AdminRepo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T14:27:05.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EventRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\EventRepo.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Data\\EventRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\EventRepo.cs",
+              "RelativeToolTip": "KmcAPI\\Data\\EventRepo.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAqwF8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:33:10.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20260325192442_AddEventPlatform.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325192442_AddEventPlatform.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Migrations\\20260325192442_AddEventPlatform.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325192442_AddEventPlatform.cs",
+              "RelativeToolTip": "KmcAPI\\Migrations\\20260325192442_AddEventPlatform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T19:24:43.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20260325055905_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055905_InitialCreate.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Migrations\\20260325055905_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055905_InitialCreate.cs",
+              "RelativeToolTip": "KmcAPI\\Migrations\\20260325055905_InitialCreate.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAywBgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T05:59:05.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OrganizerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\OrganizerRepo.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Data\\OrganizerRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\OrganizerRepo.cs",
+              "RelativeToolTip": "KmcAPI\\Data\\OrganizerRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:33:33.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20260325055536_FixRegistrationRelations.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055536_FixRegistrationRelations.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Migrations\\20260325055536_FixRegistrationRelations.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055536_FixRegistrationRelations.cs",
+              "RelativeToolTip": "KmcAPI\\Migrations\\20260325055536_FixRegistrationRelations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T05:55:37.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ParticipantRepo.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\ParticipantRepo.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Data\\ParticipantRepo.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Data\\ParticipantRepo.cs",
+              "RelativeToolTip": "KmcAPI\\Data\\ParticipantRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T15:33:55.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20260325055127_FixRegistrationKey.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055127_FixRegistrationKey.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Migrations\\20260325055127_FixRegistrationKey.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260325055127_FixRegistrationKey.cs",
+              "RelativeToolTip": "KmcAPI\\Migrations\\20260325055127_FixRegistrationKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T05:51:27.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20260324223832_AddCurrentParticipantsToEvent.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260324223832_AddCurrentParticipantsToEvent.cs",
+              "RelativeDocumentMoniker": "KmcAPI\\Migrations\\20260324223832_AddCurrentParticipantsToEvent.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Migrations\\20260324223832_AddCurrentParticipantsToEvent.cs",
+              "RelativeToolTip": "KmcAPI\\Migrations\\20260324223832_AddCurrentParticipantsToEvent.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T22:38:32.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "KmcAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "KmcAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-23T09:02:33.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "KmcAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\KmcAPI.csproj",
+              "RelativeDocumentMoniker": "KmcAPI\\KmcAPI.csproj",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\KmcAPI.csproj",
+              "RelativeToolTip": "KmcAPI\\KmcAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-23T09:01:27.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "KmcAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\Assigments\\HND Assigments\\SEM 4\\SOC\\KMC Project\\KmcAPI\\KmcAPI\\appsettings.json",
+              "RelativeToolTip": "KmcAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-23T09:02:24.705Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

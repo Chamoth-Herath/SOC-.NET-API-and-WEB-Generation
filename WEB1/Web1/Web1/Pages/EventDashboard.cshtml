@@ -1,0 +1,1164 @@
+﻿@page "{handler?}"
+@model Web1.Pages.EventDashboardModel
+@{
+    ViewData["Title"] = "Event Dashboard";
+}
+
+@section Styles {
+    <style>
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .ed-hero {
+            background: linear-gradient(135deg, #0f3d1f 0%, #1a5c30 60%, #0a2e16 100%);
+            padding: 48px 2.5rem 36px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .ed-hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .ed-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            margin: 0 0 6px;
+        }
+
+        .ed-hero p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.88rem;
+            margin: 0;
+        }
+
+        .ed-hero-stats {
+            display: flex;
+            gap: 12px;
+        }
+
+        .ed-stat {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 12px;
+            padding: 12px 20px;
+            text-align: center;
+            min-width: 90px;
+        }
+
+            .ed-stat .snum {
+                font-size: 1.6rem;
+                font-weight: 800;
+                color: #fff;
+                line-height: 1;
+                display: block;
+            }
+
+            .ed-stat .slbl {
+                font-size: 0.62rem;
+                color: rgba(255,255,255,0.45);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                display: block;
+                margin-top: 3px;
+            }
+
+        .ed-body {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 36px 2rem 60px;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+
+        /* FORM */
+        .ed-form-panel {
+            background: #fff;
+            border-radius: 16px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            overflow: hidden;
+            position: sticky;
+            top: 90px;
+        }
+
+        .ed-form-header {
+            background: #f9fdf9;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 16px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .ed-form-header h2 {
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: #0f3d1f;
+                margin: 0;
+            }
+
+            .ed-form-header span {
+                font-size: 0.72rem;
+                color: #aaa;
+            }
+
+        .ed-form-body {
+            padding: 18px 22px 22px;
+        }
+
+        .ed-group {
+            margin-bottom: 12px;
+        }
+
+            .ed-group label {
+                display: block;
+                font-size: 0.72rem;
+                font-weight: 700;
+                color: #555;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+            }
+
+                .ed-group label span {
+                    color: #c0392b;
+                }
+
+        .ed-input, .ed-select, .ed-textarea {
+            width: 100%;
+            padding: 9px 12px;
+            border: 1.5px solid #e4e4e4;
+            border-radius: 9px;
+            font-size: 0.85rem;
+            color: #222;
+            background: #fafafa;
+            outline: none;
+            transition: border-color 0.2s, background 0.2s;
+            box-sizing: border-box;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+            .ed-input:focus, .ed-select:focus, .ed-textarea:focus {
+                border-color: #0f3d1f;
+                background: #fff;
+            }
+
+        .ed-textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        .ed-row-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .ed-file-wrap {
+            border: 2px dashed #e0e0e0;
+            border-radius: 9px;
+            padding: 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.2s;
+            background: #fafafa;
+            position: relative;
+        }
+
+            .ed-file-wrap:hover {
+                border-color: #0f3d1f;
+                background: #f5fdf5;
+            }
+
+            .ed-file-wrap input[type="file"] {
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+            }
+
+            .ed-file-wrap i {
+                font-size: 1.2rem;
+                color: #ccc;
+                margin-bottom: 4px;
+                display: block;
+            }
+
+            .ed-file-wrap p {
+                font-size: 0.72rem;
+                color: #aaa;
+                margin: 0;
+            }
+
+        .ed-file-preview {
+            display: none;
+            margin-top: 8px;
+            border-radius: 8px;
+            overflow: hidden;
+            max-height: 100px;
+        }
+
+            .ed-file-preview img {
+                width: 100%;
+                object-fit: cover;
+                max-height: 100px;
+            }
+
+        .ed-msg {
+            display: none;
+            padding: 10px 14px;
+            border-radius: 9px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+            .ed-msg.success {
+                background: #f0fdf4;
+                color: #15803d;
+                border: 1px solid #bbf7d0;
+                display: block;
+            }
+
+            .ed-msg.error {
+                background: #fef2f2;
+                color: #b91c1c;
+                border: 1px solid #fecaca;
+                display: block;
+            }
+
+        .ed-form-btns {
+            display: flex;
+            gap: 8px;
+        }
+
+        .ed-submit {
+            flex: 1;
+            padding: 11px;
+            background: #0f3d1f;
+            color: #fff;
+            font-size: 0.88rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-family: 'DM Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+
+            .ed-submit:hover {
+                background: #1a5c30;
+            }
+
+            .ed-submit:disabled {
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
+
+        .ed-cancel-btn {
+            padding: 11px 16px;
+            background: #f5f5f5;
+            color: #666;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            transition: background 0.2s;
+            display: none;
+        }
+
+            .ed-cancel-btn:hover {
+                background: #eee;
+            }
+
+        .spinner {
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border: 2px solid rgba(255,255,255,0.4);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+        @@keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* EVENT ROWS */
+        .ed-list-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+            .ed-list-header h2 {
+                font-size: 1rem;
+                font-weight: 700;
+                color: #111;
+                margin: 0;
+            }
+
+            .ed-list-header span {
+                font-size: 0.75rem;
+                color: #aaa;
+            }
+
+        .ed-event-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+            margin-bottom: 14px;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+
+            .ed-event-card:hover {
+                box-shadow: 0 4px 18px rgba(15,61,31,0.09);
+            }
+
+        .ed-event-row {
+            display: grid;
+            grid-template-columns: 80px 1fr auto;
+            gap: 0;
+        }
+
+        .ed-ev-img {
+            width: 80px;
+            min-height: 90px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #81c784;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+            .ed-ev-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .ed-ev-content {
+            padding: 12px 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .ed-ev-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .ed-ev-tag {
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tag-active {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .tag-inactive {
+            background: #fef2f2;
+            color: #b91c1c;
+        }
+
+        .tag-upcoming {
+            background: #fffbeb;
+            color: #92400e;
+        }
+
+        .tag-cat {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .ed-ev-title {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #111;
+            margin: 0;
+        }
+
+        .ed-ev-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .ed-ev-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.7rem;
+            color: #888;
+        }
+
+            .ed-ev-meta-item i {
+                font-size: 0.62rem;
+                color: #0f3d1f;
+            }
+
+        .ed-ev-right {
+            padding: 10px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 6px;
+            border-left: 1px solid #f5f5f5;
+            min-width: 90px;
+        }
+
+        .ed-ev-cap {
+            font-size: 0.7rem;
+            color: #aaa;
+            text-align: right;
+        }
+
+            .ed-ev-cap strong {
+                color: #555;
+            }
+
+        .ed-cap-bar {
+            width: 65px;
+            height: 3px;
+            background: #eee;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .ed-cap-fill {
+            height: 100%;
+            background: #0f3d1f;
+            border-radius: 2px;
+        }
+
+            .ed-cap-fill.full {
+                background: #c0392b;
+            }
+
+        /* ACTION BUTTONS */
+        .ed-event-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-top: 1px solid #f5f5f5;
+            background: #fafafa;
+        }
+
+        .ed-act-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 6px 14px;
+            border-radius: 7px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-family: 'DM Sans', sans-serif;
+            transition: all 0.18s;
+        }
+
+        .ed-act-edit {
+            background: #e8f5e9;
+            color: #0f3d1f;
+        }
+
+            .ed-act-edit:hover {
+                background: #c8e6c9;
+            }
+
+        .ed-act-delete {
+            background: #fef2f2;
+            color: #b91c1c;
+        }
+
+            .ed-act-delete:hover {
+                background: #fecaca;
+            }
+
+        .ed-act-regs {
+            background: #f0f0f0;
+            color: #555;
+            margin-left: auto;
+        }
+
+            .ed-act-regs:hover {
+                background: #e0e0e0;
+            }
+
+        /* REGISTRATIONS PANEL (expandable) */
+        .ed-regs-panel {
+            display: none;
+            border-top: 1px solid #f0f0f0;
+        }
+
+            .ed-regs-panel.open {
+                display: block;
+            }
+
+        .ed-regs-inner {
+            padding: 14px 16px;
+        }
+
+        .ed-regs-title {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #555;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .ed-reg-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: 0.8rem;
+        }
+
+            .ed-reg-item:last-child {
+                border-bottom: none;
+            }
+
+        .ed-reg-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #e8f5e9;
+            color: #0f3d1f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .ed-reg-name {
+            font-weight: 600;
+            color: #222;
+        }
+
+        .ed-reg-email {
+            font-size: 0.72rem;
+            color: #aaa;
+        }
+
+        .ed-reg-date {
+            font-size: 0.68rem;
+            color: #bbb;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        .ed-regs-empty {
+            font-size: 0.78rem;
+            color: #bbb;
+            text-align: center;
+            padding: 16px 0;
+        }
+
+        .ed-regs-loading {
+            font-size: 0.78rem;
+            color: #aaa;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        .ed-empty {
+            text-align: center;
+            padding: 60px 20px;
+            color: #ccc;
+        }
+
+            .ed-empty i {
+                font-size: 2rem;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .ed-empty p {
+                font-size: 0.85rem;
+                margin: 0;
+            }
+
+        /* DELETE CONFIRM */
+        .ed-confirm-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 3000;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .ed-confirm-overlay.open {
+                display: flex;
+            }
+
+        .ed-confirm-box {
+            background: #fff;
+            border-radius: 14px;
+            padding: 28px 32px;
+            max-width: 360px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+        }
+
+            .ed-confirm-box i {
+                font-size: 2rem;
+                color: #e74c3c;
+                margin-bottom: 12px;
+                display: block;
+            }
+
+            .ed-confirm-box h3 {
+                font-size: 1rem;
+                font-weight: 700;
+                margin: 0 0 8px;
+            }
+
+            .ed-confirm-box p {
+                font-size: 0.82rem;
+                color: #888;
+                margin: 0 0 20px;
+            }
+
+        .ed-confirm-btns {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .ed-confirm-yes {
+            padding: 9px 22px;
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            transition: background 0.2s;
+        }
+
+            .ed-confirm-yes:hover {
+                background: #c0392b;
+            }
+
+        .ed-confirm-no {
+            padding: 9px 22px;
+            background: #f0f0f0;
+            color: #555;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        @@media (max-width: 900px) {
+            .ed-body {
+                grid-template-columns: 1fr;
+            }
+
+            .ed-form-panel {
+                position: static;
+            }
+        }
+   
+    </style>
+}
+
+<!-- DELETE CONFIRM DIALOG -->
+<div class="ed-confirm-overlay" id="deleteOverlay">
+    <div class="ed-confirm-box">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <h3>Delete Event?</h3>
+        <p>This action cannot be undone. All registrations for this event will also be removed.</p>
+        <div class="ed-confirm-btns">
+            <button class="ed-confirm-yes" onclick="confirmDelete()">Yes, Delete</button>
+            <button class="ed-confirm-no" onclick="closeDeleteConfirm()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="ed-hero">
+    <div class="ed-hero-inner">
+        <div>
+            <h1>Event Dashboard</h1>
+            <p>Manage and create events for your organization</p>
+        </div>
+        <div class="ed-hero-stats">
+            <div class="ed-stat">
+                <span class="snum">@Model.Events.Count</span>
+                <span class="slbl">Total Events</span>
+            </div>
+            <div class="ed-stat">
+                <span class="snum">@Model.Events.Sum(e => e.RegisteredCitizens)</span>
+                <span class="slbl">Registrations</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div class="ed-body">
+
+    <!-- FORM PANEL -->
+    <div class="ed-form-panel">
+        <div class="ed-form-header">
+            <h2 id="formTitle"><i class="fa-solid fa-circle-plus" style="margin-right:6px;font-size:0.85rem"></i>Add New Event</h2>
+            <span>* required</span>
+        </div>
+        <div class="ed-form-body">
+            <input type="hidden" id="editingId" value="" />
+            <div class="ed-msg" id="formMsg"></div>
+
+            <div class="ed-group">
+                <label>Event Title <span>*</span></label>
+                <input class="ed-input" type="text" id="f-title" placeholder="Enter event title" />
+            </div>
+            <div class="ed-group">
+                <label>Description</label>
+                <textarea class="ed-textarea" id="f-desc" placeholder="Brief description…"></textarea>
+            </div>
+            <div class="ed-row-2">
+                <div class="ed-group">
+                    <label>Category <span>*</span></label>
+                    <select class="ed-select" id="f-cat">
+                        <option>Cultural</option>
+                        <option>Performing Arts</option>
+                        <option>Sports & Fitness</option>
+                        <option>Music & Entertainment</option>
+                        <option>Food & Dining</option>
+                        <option>Science & Innovation</option>
+                        <option>Business & Networking</option>
+                        <option>Health & Wellness</option>
+                        <option>Education & Workshops</option>
+                        <option>Charity & Volunteering</option>
+                        <option>Religious & Spiritual</option>
+                        <option>Outdoor & Adventure</option>
+                        <option>Community & Social</option>
+                        <option>Family & Kids</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="ed-group">
+                    <label>Status <span>*</span></label>
+                    <select class="ed-select" id="f-status">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                        <option value="Upcoming">Upcoming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ed-group">
+                <label>Venue <span>*</span></label>
+                <input class="ed-input" type="text" id="f-venue" placeholder="Event location" />
+            </div>
+            <div class="ed-row-2">
+                <div class="ed-group">
+                    <label>Date <span>*</span></label>
+                    <input class="ed-input" type="date" id="f-date" />
+                </div>
+                <div class="ed-group">
+                    <label>Time <span>*</span></label>
+                    <input class="ed-input" type="time" id="f-time" />
+                </div>
+            </div>
+            <div class="ed-group">
+                <label>Max Capacity <span>*</span></label>
+                <input class="ed-input" type="number" id="f-cap" placeholder="e.g. 100" min="1" />
+            </div>
+            <div class="ed-group">
+                <label>Event Image</label>
+                <div class="ed-file-wrap">
+                    <input type="file" id="f-img" accept="image/*" onchange="previewImage(this)" />
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>Click to upload image</p>
+                </div>
+                <div class="ed-file-preview" id="imgPreview">
+                    <img id="previewImg" src="" alt="Preview" />
+                </div>
+            </div>
+
+            <div class="ed-form-btns">
+                <button class="ed-cancel-btn" id="cancelBtn" onclick="cancelEdit()">Cancel</button>
+                <button class="ed-submit" id="submitBtn" onclick="handleSubmit()">
+                    <i class="fa-solid fa-circle-plus"></i> Create Event
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EVENTS LIST -->
+    <div>
+        <div class="ed-list-header">
+            <h2>Your Events</h2>
+            <span>@Model.Events.Count event@(Model.Events.Count == 1 ? "" : "s")</span>
+        </div>
+
+        @if (!Model.Events.Any())
+        {
+            <div class="ed-empty">
+                <i class="fa-regular fa-calendar-xmark"></i>
+                <p>No events yet. Create your first event!</p>
+            </div>
+        }
+        else
+        {
+            @foreach (var ev in Model.Events)
+            {
+                var pct = ev.MaxCapacity > 0 ? (int)((double)ev.RegisteredCitizens / ev.MaxCapacity * 100) : 0;
+                var isFull = pct >= 100;
+                var tagCls = ev.EventStatus?.ToLower() switch
+                {
+                    "active" => "tag-active",
+                    "inactive" => "tag-inactive",
+                    _ => "tag-upcoming"
+                };
+
+                <div class="ed-event-card" id="card-@ev.Id">
+                    <div class="ed-event-row">
+                        <div class="ed-ev-img">
+                            @if (!string.IsNullOrEmpty(ev.ActivityImage))
+                            {
+                                <img src="https://localhost:7098@(ev.ActivityImage)" alt="@ev.EventTitle" />
+                            }
+                            else
+                            {
+                                <i class="fa-regular fa-calendar"></i>
+                            }
+                        </div>
+                        <div class="ed-ev-content">
+                            <div class="ed-ev-tags">
+                                @if (!string.IsNullOrEmpty(ev.Category))
+                                {
+                                    <span class="ed-ev-tag tag-cat">@ev.Category</span>
+                                }
+                                <span class="ed-ev-tag @tagCls">@ev.EventStatus</span>
+                            </div>
+                            <h3 class="ed-ev-title">@ev.EventTitle</h3>
+                            <div class="ed-ev-meta">
+                                <span class="ed-ev-meta-item"><i class="fa-solid fa-location-dot"></i> @ev.Venue</span>
+                                <span class="ed-ev-meta-item"><i class="fa-solid fa-calendar-day"></i> @ev.Date.ToString("MMM dd, yyyy")</span>
+                                <span class="ed-ev-meta-item"><i class="fa-solid fa-clock"></i> @ev.Time.ToString("hh:mm tt")</span>
+                            </div>
+                        </div>
+                        <div class="ed-ev-right">
+                            <div class="ed-ev-cap"><strong>@ev.RegisteredCitizens</strong> / @ev.MaxCapacity</div>
+                            <div class="ed-cap-bar">
+                                <div class="ed-cap-fill @(isFull ? "full" : "")" style="width:@pct%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ACTION BAR -->
+                    <div class="ed-event-actions">
+                       <button class="ed-act-btn ed-act-edit" 
+        data-ev='@Html.Raw(System.Text.Json.JsonSerializer.Serialize(new {
+            id = ev.Id,
+            title = ev.EventTitle,
+            desc = ev.EventDescription,
+            cat = ev.Category,
+            venue = ev.Venue,
+            date = ev.Date.ToString("yyyy-MM-dd"),
+            time = ev.Time.ToString("HH:mm"),
+            cap = ev.MaxCapacity,
+            status = ev.EventStatus
+        }))'
+        onclick="loadEditFromBtn(this)">
+    <i class="fa-solid fa-pen"></i> Edit
+</button>
+                        <button class="ed-act-btn ed-act-delete" onclick="openDeleteConfirm(@ev.Id)">
+                            <i class="fa-solid fa-trash"></i> Delete
+                        </button>
+                        <button class="ed-act-btn ed-act-regs" onclick="toggleRegistrations(@ev.Id, this)">
+                            <i class="fa-solid fa-users"></i> @ev.RegisteredCitizens Registered
+                        </button>
+                    </div>
+
+                    <!-- REGISTRATIONS PANEL -->
+                    <div class="ed-regs-panel" id="regs-@ev.Id">
+                        <div class="ed-regs-inner" id="regs-inner-@ev.Id">
+                            <div class="ed-regs-loading">Loading…</div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const organizerId  = @Model.OrganizerId;
+        let   deleteTarget = null;
+
+        // ── IMAGE PREVIEW ──
+        function previewImage(input) {
+            const previewWrap = document.getElementById('imgPreview');
+            const previewImg  = document.getElementById('previewImg');
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = e => { previewImg.src = e.target.result; previewWrap.style.display = 'block'; };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // ── MESSAGES ──
+        function showMsg(type, text) {
+            const msgEl = document.getElementById('formMsg');
+            msgEl.className   = 'ed-msg ' + type;
+            msgEl.textContent = text;
+        }
+        function clearMsg() {
+            const msgEl = document.getElementById('formMsg');
+            msgEl.className   = 'ed-msg';
+            msgEl.textContent = '';
+        }
+
+        // ── LOADING ──
+        function setLoading(loading, isEdit) {
+            const btn = document.getElementById('submitBtn');
+            btn.disabled  = loading;
+            btn.innerHTML = loading
+                ? '<span class="spinner"></span> Saving…'
+                : isEdit
+                    ? '<i class="fa-solid fa-floppy-disk"></i> Save Changes'
+                    : '<i class="fa-solid fa-circle-plus"></i> Create Event';
+        }
+
+        // ── LOAD EDIT ──
+ function loadEditFromBtn(btn) {
+    const ev = JSON.parse(btn.getAttribute('data-ev'));
+    loadEdit(ev.id, ev.title, ev.desc, ev.cat, ev.venue, ev.date, ev.time, ev.cap, ev.status);
+}
+
+function loadEdit(id, title, desc, cat, venue, date, time, cap, status) {
+    document.getElementById('editingId').value = id;
+    document.getElementById('f-title').value   = title  || '';
+    document.getElementById('f-desc').value    = desc   || '';
+    document.getElementById('f-cat').value     = cat    || '';
+    document.getElementById('f-venue').value   = venue  || '';
+    document.getElementById('f-date').value    = date   || '';
+    document.getElementById('f-time').value    = time   || '';
+    document.getElementById('f-cap').value     = cap    || '';
+    document.getElementById('f-status').value  = status || 'Active';
+
+    document.getElementById('formTitle').innerHTML = '<i class="fa-solid fa-pen" style="margin-right:6px;font-size:0.85rem"></i>Edit Event';
+    document.getElementById('submitBtn').innerHTML = '<i class="fa-solid fa-floppy-disk"></i> Save Changes';
+    document.getElementById('cancelBtn').style.display = 'block';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    clearMsg();
+}
+
+        function cancelEdit() {
+            document.getElementById('editingId').value = '';
+            document.getElementById('formTitle').innerHTML = '<i class="fa-solid fa-circle-plus" style="margin-right:6px;font-size:0.85rem"></i>Add New Event';
+            document.getElementById('submitBtn').innerHTML = '<i class="fa-solid fa-circle-plus"></i> Create Event';
+            document.getElementById('cancelBtn').style.display = 'none';
+            clearForm();
+            clearMsg();
+        }
+
+        // ── SUBMIT (create or update) ──
+         async function handleSubmit() {
+    const editingId = document.getElementById('editingId').value;
+    const isEdit    = editingId !== '';
+
+    const titleVal  = document.getElementById('f-title').value.trim();
+    const catVal    = document.getElementById('f-cat').value;
+    const venueVal  = document.getElementById('f-venue').value.trim();
+    const dateVal   = document.getElementById('f-date').value;
+    const timeVal   = document.getElementById('f-time').value;
+    const capVal    = document.getElementById('f-cap').value;
+    const statusVal = document.getElementById('f-status').value;
+    const descVal   = document.getElementById('f-desc').value.trim();
+    const imgFile   = document.getElementById('f-img').files[0];
+
+    if (!titleVal || !catVal || !venueVal || !dateVal || !timeVal || !capVal) {
+        showMsg('error', 'Please fill in all required fields.');
+        return;
+    }
+
+    setLoading(true, isEdit);
+
+    const dateToSend = `${dateVal}T00:00:00`;
+    const timeToSend = `${dateVal}T${timeVal}:00`;
+
+    try {
+        const formData = new FormData();
+        formData.append('eventTitle',       titleVal);
+        formData.append('eventDescription', descVal);
+        formData.append('category',         catVal);
+        formData.append('venue',            venueVal);
+        formData.append('date',             dateToSend);
+        formData.append('time',             timeToSend);
+        formData.append('maxCapacity',      capVal);
+        formData.append('eventStatus',      statusVal);
+        formData.append('organizerId',      organizerId);
+        formData.append('filterplatform',   'PrivateWEB');
+        if (imgFile) formData.append('activityImageFile', imgFile);
+
+        const BASE   = 'https://localhost:7098/api';
+        const url    = isEdit ? `${BASE}/Event/${editingId}` : `${BASE}/Event`;
+        const method = isEdit ? 'PUT' : 'POST';
+
+        const res = await fetch(url, { method, body: formData });
+
+        if (res.ok) {
+            showMsg('success', isEdit ? 'Event updated!' : 'Event created!');
+            setTimeout(() => location.reload(), 900);
+        } else {
+            const errText = await res.text();
+            showMsg('error', errText || 'Failed to save event.');
+        }
+    } catch (err) {
+        showMsg('error', 'Could not reach the server: ' + err.message);
+    } finally {
+        setLoading(false, isEdit);
+    }
+}
+
+        // ── DELETE ──
+            function openDeleteConfirm(id) {
+            deleteTarget = parseInt(id);
+            console.log('Delete target set to:', deleteTarget);
+            document.getElementById('deleteOverlay').classList.add('open');
+        }
+        function closeDeleteConfirm() {
+            document.getElementById('deleteOverlay').classList.remove('open');
+        }
+        async function confirmDelete() {
+            if (!deleteTarget) return;
+            const idToDelete = deleteTarget;
+            deleteTarget = null;
+            closeDeleteConfirm();
+
+            try {
+                const formData = new FormData();
+                formData.append('eventId', idToDelete.toString());
+
+                const deleteCall = await fetch('/EventDashboard?handler=Delete', {
+                    method: 'POST',
+                    body:   formData
+                });
+
+                const responseText = await deleteCall.text();
+                console.log('Delete response:', deleteCall.status, responseText);
+
+                if (deleteCall.ok) {
+                    const card = document.getElementById('card-' + idToDelete);
+                    if (card) card.remove();
+                } else {
+                    alert('Failed: ' + responseText);
+                }
+            } catch (err) {
+                alert('Could not reach the server: ' + err.message);
+            }
+        }
+
+        // ── REGISTRATIONS TOGGLE ──
+        const loadedRegs = {};
+        async function toggleRegistrations(eventId, btn) {
+            const panel = document.getElementById('regs-' + eventId);
+            const inner = document.getElementById('regs-inner-' + eventId);
+            const isOpen = panel.classList.contains('open');
+
+            if (isOpen) {
+                panel.classList.remove('open');
+                btn.innerHTML = btn.innerHTML.replace('Hide', btn.getAttribute('data-count') || 'Registered');
+                return;
+            }
+
+            panel.classList.add('open');
+
+            if (loadedRegs[eventId]) return;
+
+            try {
+                const regCall  = await fetch(`/EventDashboard?handler=GetRegs&eventId=${eventId}`);
+                const regData  = await regCall.json();
+                loadedRegs[eventId] = true;
+
+                if (!regData || regData.length === 0) {
+                    inner.innerHTML = '<div class="ed-regs-empty">No registrations yet.</div>';
+                    return;
+                }
+
+                let html = `<p class="ed-regs-title">Registered Citizens (${regData.length})</p>`;
+                regData.forEach(r => {
+                    const initials = (r.publicCitizenName || '?').split(' ').map(n => n[0]).join('').toUpperCase().slice(0,2);
+                    html += `
+                        <div class="ed-reg-item">
+                            <div class="ed-reg-avatar">${initials}</div>
+                            <div>
+                                <div class="ed-reg-name">${r.publicCitizenName || 'Unknown'}</div>
+                                <div class="ed-reg-email">${r.publicCitizenEmail || ''}</div>
+                            </div>
+                            <div class="ed-reg-date">${new Date(r.registeredAt).toLocaleDateString()}</div>
+                        </div>`;
+                });
+                inner.innerHTML = html;
+
+            } catch {
+                inner.innerHTML = '<div class="ed-regs-empty">Failed to load registrations.</div>';
+            }
+        }
+
+        function clearForm() {
+            ['f-title','f-desc','f-venue','f-date','f-time','f-cap'].forEach(id => {
+                document.getElementById(id).value = '';
+            });
+            document.getElementById('f-cat').value    = '';
+            document.getElementById('f-status').value = 'Active';
+            document.getElementById('f-img').value    = '';
+            document.getElementById('imgPreview').style.display = 'none';
+        }
+    </script>
+}

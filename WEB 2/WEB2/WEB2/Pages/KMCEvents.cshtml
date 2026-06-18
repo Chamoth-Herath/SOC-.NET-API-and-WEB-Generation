@@ -1,0 +1,663 @@
+﻿@page
+@model WEB2.Pages.KMCEventsModel
+@{
+    ViewData["Title"] = "Browse Events";
+}
+
+@section Styles {
+    <style>
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .ev-hero {
+            background: linear-gradient(135deg, #4a1010 0%, #6b1a1a 60%, #3a0808 100%);
+            padding: 64px 2.5rem 48px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+            .ev-hero h1 {
+                font-family: 'Playfair Display', serif;
+                font-size: 2.6rem;
+                font-weight: 800;
+                color: #fff;
+                margin: 0 0 10px;
+            }
+
+            .ev-hero p {
+                color: rgba(255,255,255,0.5);
+                font-size: 0.95rem;
+                margin: 0;
+            }
+
+        .ev-filters {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 16px 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 68px;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .ev-filter-input {
+            flex: 1;
+            min-width: 180px;
+            padding: 9px 14px;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            outline: none;
+            transition: border-color 0.2s;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+            .ev-filter-input:focus {
+                border-color: #6b1a1a;
+            }
+
+        .ev-filter-select {
+            padding: 9px 14px;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            outline: none;
+            background: #fff;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            transition: border-color 0.2s;
+        }
+
+            .ev-filter-select:focus {
+                border-color: #6b1a1a;
+            }
+
+        .ev-filter-clear {
+            padding: 9px 16px;
+            background: transparent;
+            color: #888;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            transition: all 0.2s;
+        }
+
+            .ev-filter-clear:hover {
+                border-color: #6b1a1a;
+                color: #6b1a1a;
+            }
+
+        .ev-body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 2rem 60px;
+        }
+
+        .ev-count {
+            font-size: 0.8rem;
+            color: #999;
+            font-weight: 500;
+            margin-bottom: 28px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+            .ev-count span {
+                color: #6b1a1a;
+                font-weight: 700;
+            }
+
+        .ev-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        /* CARD */
+        .ev-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(107,26,26,0.08);
+            border: 1px solid rgba(107,26,26,0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.22s, box-shadow 0.22s;
+        }
+
+            .ev-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 32px rgba(107,26,26,0.15);
+            }
+
+        .ev-card-img {
+            position: relative;
+            width: 100%;
+            height: 190px;
+            overflow: hidden;
+            background: #fdf5f5;
+            flex-shrink: 0;
+        }
+
+            .ev-card-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.35s;
+            }
+
+        .ev-card:hover .ev-card-img img {
+            transform: scale(1.04);
+        }
+
+        .ev-card-img-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #fdf5f5, #f5e0e0);
+            color: #d4a0a0;
+            font-size: 2.8rem;
+        }
+
+        .ev-date-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 6px 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(107,26,26,0.15);
+            min-width: 52px;
+        }
+
+            .ev-date-badge .day {
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: #6b1a1a;
+                line-height: 1;
+                display: block;
+            }
+
+            .ev-date-badge .mon {
+                font-size: 0.6rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: #8b4444;
+                display: block;
+            }
+
+            .ev-date-badge .yr {
+                font-size: 0.58rem;
+                color: #bbb;
+                display: block;
+            }
+
+        .ev-status-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .ev-status-active {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+
+        .ev-status-inactive {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+
+        .ev-status-upcoming {
+            background: #fffbeb;
+            color: #92400e;
+        }
+
+        .ev-card-body {
+            padding: 18px 20px 14px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .ev-card-cat {
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #8b4444;
+        }
+
+        .ev-card-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a0a0a;
+            margin: 0;
+            line-height: 1.35;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .ev-card-desc {
+            font-size: 0.8rem;
+            color: #999;
+            margin: 0;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .ev-card-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .ev-card-meta-row {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.78rem;
+            color: #666;
+        }
+
+            .ev-card-meta-row i {
+                font-size: 0.72rem;
+                color: #6b1a1a;
+                width: 14px;
+                text-align: center;
+            }
+
+        .ev-cap-wrap {
+            margin-top: 2px;
+        }
+
+        .ev-cap-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.72rem;
+            color: #aaa;
+            margin-bottom: 4px;
+        }
+
+            .ev-cap-label strong {
+                color: #555;
+            }
+
+        .ev-cap-bar {
+            height: 4px;
+            background: #f5e0e0;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .ev-cap-fill {
+            height: 100%;
+            border-radius: 2px;
+            background: #6b1a1a;
+            transition: width 0.4s;
+        }
+
+            .ev-cap-fill.full {
+                background: #c0392b;
+            }
+
+        .ev-card-footer {
+            padding: 12px 20px 16px;
+            border-top: 1px solid #fdf0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .ev-organizer {
+            font-size: 0.74rem;
+            color: #aaa;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+            .ev-organizer i {
+                font-size: 0.68rem;
+            }
+
+        .ev-register-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            background: #6b1a1a;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+            .ev-register-btn:hover {
+                background: #8b2a2a;
+                color: #fff;
+                transform: scale(1.02);
+            }
+
+            .ev-register-btn:active {
+                transform: scale(0.98);
+            }
+
+        .ev-full-badge {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #c0392b;
+            background: #fef2f2;
+            padding: 6px 12px;
+            border-radius: 8px;
+        }
+
+        .ev-empty {
+            text-align: center;
+            padding: 80px 20px;
+            color: #ccc;
+            grid-column: 1 / -1;
+        }
+
+            .ev-empty i {
+                font-size: 2.5rem;
+                margin-bottom: 14px;
+                display: block;
+            }
+
+            .ev-empty p {
+                font-size: 0.9rem;
+                margin: 0;
+            }
+
+        @@media (max-width: 640px) {
+            .ev-hero {
+                padding: 40px 1rem 32px;
+            }
+
+                .ev-hero h1 {
+                    font-size: 1.8rem;
+                }
+
+            .ev-filters {
+                padding: 12px 1rem;
+                top: 68px;
+            }
+
+            .ev-body {
+                padding: 24px 1rem 40px;
+            }
+
+            .ev-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+}
+
+<div class="ev-hero">
+    <h1>Browse Events</h1>
+    <p>Discover upcoming events across the Kandy Municipal area</p>
+</div>
+
+<div class="ev-filters">
+    <input class="ev-filter-input" type="text" id="f-search" placeholder=" Search by title or venue…" />
+    <select class="ev-filter-select" id="f-category">
+        <option value="">All Categories</option>
+        @foreach (var cat in Model.Categories)
+        {
+            <option value="@cat">@cat</option>
+        }
+    </select>
+    <input class="ev-filter-input" type="date" id="f-date" style="max-width:160px" />
+    <button class="ev-filter-clear" onclick="clearFilters()">Clear</button>
+</div>
+
+<div class="ev-body">
+    <div class="ev-count">
+        Showing <span id="evCountNum">@Model.Events.Count</span> event@(Model.Events.Count == 1 ? "" : "s")
+    </div>
+
+    <div class="ev-grid" id="evGrid">
+        @foreach (var ev in Model.Events)
+        {
+            var pct = ev.MaxCapacity > 0 ? (int)((double)ev.RegisteredCitizens / ev.MaxCapacity * 100) : 0;
+            var isFull = pct >= 100;
+            var statCls = ev.EventStatus?.ToLower() switch
+            {
+                "active" => "ev-status-active",
+                "inactive" => "ev-status-inactive",
+                _ => "ev-status-upcoming"
+            };
+
+            <div class="ev-card"
+                 data-title="@ev.EventTitle?.ToLower()"
+                 data-venue="@ev.Venue?.ToLower()"
+                 data-cat="@ev.Category"
+                 data-date="@ev.Date.ToString("yyyy-MM-dd")">
+
+                <div class="ev-card-img">
+                    @if (!string.IsNullOrEmpty(ev.ActivityImage))
+                    {
+                        <img src="https://localhost:7098@(ev.ActivityImage)" alt="@ev.EventTitle" />
+                    }
+                    else
+                    {
+                        <div class="ev-card-img-placeholder">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+                    }
+                    <div class="ev-date-badge">
+                        <span class="day">@ev.Date.ToString("dd")</span>
+                        <span class="mon">@ev.Date.ToString("MMM")</span>
+                        <span class="yr">@ev.Date.ToString("yyyy")</span>
+                    </div>
+                    <span class="ev-status-badge @statCls">@ev.EventStatus</span>
+                </div>
+
+                <div class="ev-card-body">
+                    @if (!string.IsNullOrEmpty(ev.Category))
+                    {
+                        <div class="ev-card-cat">@ev.Category</div>
+                    }
+                    <h3 class="ev-card-title">@ev.EventTitle</h3>
+                    @if (!string.IsNullOrEmpty(ev.EventDescription))
+                    {
+                        <p class="ev-card-desc">@ev.EventDescription</p>
+                    }
+                    <div class="ev-card-meta">
+                        <div class="ev-card-meta-row">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>@ev.Venue</span>
+                        </div>
+                        <div class="ev-card-meta-row">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <span>@ev.Date.ToString("dddd, MMMM dd yyyy")</span>
+                        </div>
+                        <div class="ev-card-meta-row">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>@ev.Time.ToString("hh:mm tt")</span>
+                        </div>
+                    </div>
+                    <div class="ev-cap-wrap">
+                        <div class="ev-cap-label">
+                            <span>Capacity</span>
+                            <span><strong>@ev.RegisteredCitizens</strong> / @ev.MaxCapacity</span>
+                        </div>
+                        <div class="ev-cap-bar">
+                            <div class="ev-cap-fill @(isFull ? "full" : "")" style="width:@pct%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ev-card-footer">
+                    <span class="ev-organizer">
+                        <i class="fa-solid fa-user-tie"></i>
+                        @(ev.OrganizerName ?? "Organizer")
+                    </span>
+
+                    @if (ev.EventStatus?.ToLower() == "inactive")
+                    {
+                        <span class="ev-full-badge" style="color:#dc2626;background:#fee2e2;">
+                            🔴 Unavailable
+                        </span>
+                    }
+                    else if (isFull && !Model.RegisteredEventIds.Contains(ev.Id))
+                    {
+                        <span class="ev-full-badge"><i class="fa-solid fa-ban"></i> Full</span>
+                    }
+                    else if (Model.LoggedInRole == "Citizen")
+                    {
+                        @if (Model.RegisteredEventIds.Contains(ev.Id))
+                        {
+                            <a href="/KMCMyRegistrations" class="ev-register-btn" style="background:#8b4444">
+                                <i class="fa-solid fa-circle-check"></i> Already Registered
+                            </a>
+                        }
+                        else
+                        {
+                            <button class="ev-register-btn"
+                                    id="reg-btn-@ev.Id"
+                                    onclick="handleRegister(@ev.Id, this)">
+                                <i class="fa-solid fa-circle-plus"></i> Register
+                            </button>
+                        }
+                    }
+                    else if (string.IsNullOrEmpty(Model.LoggedInRole))
+                    {
+                        <a href="javascript:void(0)"
+                           onclick="openAuthModal('signin')"
+                           class="ev-register-btn">
+                            <i class="fa-solid fa-right-to-bracket"></i> Sign in
+                        </a>
+                    }
+                </div>
+            </div>
+        }
+
+        @if (!Model.Events.Any())
+        {
+            <div class="ev-empty">
+                <i class="fa-regular fa-calendar-xmark"></i>
+                <p>No events found. Check back soon!</p>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+              async function handleRegister(eventId, btnEl) {
+            // ── Find the card FIRST before touching the button ──
+            const targetCard = btnEl.closest('.ev-card');
+
+            btnEl.disabled  = true;
+            btnEl.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Registering…';
+
+            try {
+                const registerCall = await fetch('/KMCRegister', {
+                    method:  'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body:    JSON.stringify({ eventId: eventId })
+                });
+
+                const registerOutcome = await registerCall.json();
+
+                if (!registerOutcome.ok) {
+                    btnEl.disabled  = false;
+                    btnEl.innerHTML = '<i class="fa-solid fa-circle-plus"></i> Register';
+                    alert(registerOutcome.message || 'Registration failed.');
+                    return;
+                }
+
+                // ── Live update capacity BEFORE replacing button ──
+                if (targetCard) {
+                    const capLabel = targetCard.querySelector('.ev-cap-label strong');
+                    const capText  = targetCard.querySelector('.ev-cap-label span:last-child');
+                    const capFill  = targetCard.querySelector('.ev-cap-fill');
+
+                    if (capLabel) {
+                        const newCount = (parseInt(capLabel.textContent) || 0) + 1;
+                        capLabel.textContent = newCount;
+
+                        if (capFill && capText) {
+                            const maxCap = parseInt(capText.textContent.split('/')[1]) || 1;
+                            const newPct = Math.min(100, Math.round((newCount / maxCap) * 100));
+                            capFill.style.width = newPct + '%';
+                            if (newPct >= 100) capFill.classList.add('full');
+                        }
+                    }
+                }
+
+                // ── Now replace the button ──
+                btnEl.outerHTML = `
+                    <a href="/KMCMyRegistrations" class="ev-register-btn" style="background:#8b4444">
+                        <i class="fa-solid fa-circle-check"></i> Already Registered
+                    </a>`;
+
+            } catch (err) {
+                btnEl.disabled  = false;
+                btnEl.innerHTML = '<i class="fa-solid fa-circle-plus"></i> Register';
+                alert('Could not reach the server.');
+            }
+        }
+
+        function applyFilters() {
+            const searchVal = document.getElementById('f-search').value.toLowerCase().trim();
+            const catVal    = document.getElementById('f-category').value;
+            const dateVal   = document.getElementById('f-date').value;
+            const cards     = document.querySelectorAll('.ev-card');
+            let   visible   = 0;
+            cards.forEach(card => {
+                const titleMatch = !searchVal || card.dataset.title.includes(searchVal) || card.dataset.venue.includes(searchVal);
+                const catMatch   = !catVal    || card.dataset.cat === catVal;
+                const dateMatch  = !dateVal   || card.dataset.date === dateVal;
+                const show       = titleMatch && catMatch && dateMatch;
+                card.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+            document.getElementById('evCountNum').textContent = visible;
+        }
+
+        function clearFilters() {
+            document.getElementById('f-search').value   = '';
+            document.getElementById('f-category').value = '';
+            document.getElementById('f-date').value     = '';
+            document.querySelectorAll('.ev-card').forEach(c => c.style.display = '');
+            document.getElementById('evCountNum').textContent = document.querySelectorAll('.ev-card').length;
+        }
+
+        document.getElementById('f-search').addEventListener('input',   applyFilters);
+        document.getElementById('f-category').addEventListener('change', applyFilters);
+        document.getElementById('f-date').addEventListener('change',     applyFilters);
+    </script>
+}

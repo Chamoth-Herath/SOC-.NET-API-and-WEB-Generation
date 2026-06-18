@@ -1,0 +1,773 @@
+﻿@page
+@model Web1.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@section Styles {
+    <style>
+        
+        :root {
+            --g1: #0f3d1f;
+            --g2: #0a2e16;
+            --g3: #1a5c30;
+            --g4: #2d8a4e;
+            --lime: #86efac;
+            --cream: #f5f0e8;
+            --ink: #0d1f12;
+            --muted: #5a7a62;
+            --border: rgba(15,61,31,0.14);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--cream);
+            color: var(--ink);
+            overflow-x: hidden;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh;
+            background: var(--g2);
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            overflow: hidden;
+        }
+
+            /* diagonal split */
+            .hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 55%;
+                height: 100%;
+                background: var(--g1);
+                clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+                z-index: 0;
+            }
+
+            /* grid lines texture */
+            .hero::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-image: linear-gradient(rgba(134,239,172,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(134,239,172,0.04) 1px, transparent 1px);
+                background-size: 60px 60px;
+                z-index: 1;
+            }
+
+        .hero-left {
+            position: relative;
+            z-index: 2;
+            padding: 8rem 3.5rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.62rem;
+            font-weight: 600;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--lime);
+            margin-bottom: 2rem;
+        }
+
+            .hero-eyebrow::before {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 1px;
+                background: var(--lime);
+                opacity: 0.6;
+            }
+
+        .hero-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.5rem, 6vw, 6.5rem);
+            font-weight: 600;
+            color: white;
+            line-height: 0.95;
+            letter-spacing: -0.01em;
+            margin-bottom: 2rem;
+        }
+
+            .hero-title em {
+                font-style: italic;
+                color: var(--lime);
+                font-weight: 400;
+            }
+
+        .hero-body {
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.85;
+            max-width: 380px;
+            font-weight: 300;
+            margin-bottom: 3rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .btn-solid {
+            background: var(--lime);
+            color: var(--g2);
+            border: none;
+            padding: 14px 30px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.22s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .btn-solid:hover {
+                background: white;
+                color: var(--g1);
+                transform: translateY(-2px);
+            }
+
+        .btn-outline {
+            background: transparent;
+            color: rgba(255,255,255,0.6);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 13px 28px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.22s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .btn-outline:hover {
+                border-color: var(--lime);
+                color: var(--lime);
+            }
+
+        .hero-right {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 3rem;
+        }
+
+        .hero-stat-cluster {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            width: 100%;
+            max-width: 380px;
+        }
+
+        .hero-stat {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(134,239,172,0.1);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: background 0.2s;
+        }
+
+            .hero-stat:hover {
+                background: rgba(134,239,172,0.06);
+            }
+
+        .hero-stat-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: var(--lime);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero-stat-label {
+            font-size: 0.62rem;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.35);
+        }
+
+        /* ── MARQUEE ── */
+        .marquee-strip {
+            background: var(--g3);
+            border-top: 1px solid rgba(134,239,172,0.15);
+            border-bottom: 1px solid rgba(134,239,172,0.15);
+            padding: 14px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-inner {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 2.5rem;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.5);
+        }
+
+            .marquee-item i {
+                color: var(--lime);
+                font-size: 0.7rem;
+            }
+
+        @@keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* ── WHAT WE DO ── */
+        .what-section {
+            padding: 7rem 0;
+            background: var(--cream);
+        }
+
+        .what-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2.5rem;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        .what-label {
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--g3);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .what-label::before {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 1px;
+                background: var(--g3);
+            }
+
+        .what-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1.05;
+        }
+
+            .what-heading em {
+                font-style: italic;
+                color: var(--g3);
+            }
+
+        .what-list {
+            list-style: none;
+            padding: 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .what-item {
+            display: grid;
+            grid-template-columns: 48px 1fr auto;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.22s;
+            cursor: default;
+        }
+
+            .what-item:hover .what-item-num {
+                color: var(--g3);
+            }
+
+            .what-item:hover .what-item-title {
+                color: var(--g3);
+            }
+
+            .what-item:hover .what-item-arrow {
+                opacity: 1;
+                transform: translateX(4px);
+            }
+
+        .what-item-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: rgba(15,61,31,0.15);
+            transition: color 0.22s;
+            line-height: 1;
+        }
+
+        .what-item-body {
+        }
+
+        .what-item-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.3rem;
+            transition: color 0.22s;
+        }
+
+        .what-item-desc {
+            font-size: 0.82rem;
+            color: var(--muted);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .what-item-arrow {
+            font-size: 0.85rem;
+            color: var(--g3);
+            opacity: 0;
+            transition: all 0.22s;
+        }
+
+       
+        .dark-band {
+            background: var(--g2);
+            padding: 7rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .dark-band::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-image: linear-gradient(rgba(134,239,172,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(134,239,172,0.03) 1px, transparent 1px);
+                background-size: 80px 80px;
+            }
+
+        .dark-band-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .dark-band-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+            gap: 2rem;
+        }
+
+        .dark-band-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 3.5vw, 3.2rem);
+            font-weight: 600;
+            color: white;
+            line-height: 1.05;
+        }
+
+            .dark-band-title em {
+                font-style: italic;
+                color: var(--lime);
+            }
+
+        .dark-band-sub {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.4);
+            line-height: 1.8;
+            max-width: 320px;
+            font-weight: 300;
+            text-align: right;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: rgba(134,239,172,0.08);
+            border: 1px solid rgba(134,239,172,0.08);
+        }
+
+        .process-step {
+            background: var(--g2);
+            padding: 2.5rem 2rem;
+            position: relative;
+            transition: background 0.22s;
+        }
+
+            .process-step:hover {
+                background: rgba(134,239,172,0.05);
+            }
+
+        .process-step-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: rgba(134,239,172,0.12);
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .process-step-icon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(134,239,172,0.2);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lime);
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .process-step-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.6rem;
+        }
+
+        .process-step-desc {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.38);
+            line-height: 1.75;
+            font-weight: 300;
+        }
+
+        /* ── CTA ── */
+        .cta-section {
+            background: var(--cream);
+            padding: 7rem 0;
+        }
+
+        .cta-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .cta-left {
+            background: var(--g1);
+            padding: 4.5rem 3.5rem;
+        }
+
+        .cta-left-tag {
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--lime);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .cta-left-tag::before {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 1px;
+                background: var(--lime);
+            }
+
+        .cta-left h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 3vw, 3rem);
+            font-weight: 600;
+            color: white;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+        }
+
+            .cta-left h2 em {
+                font-style: italic;
+                color: var(--lime);
+            }
+
+        .cta-left p {
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.85;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-right {
+            background: #f0ece0;
+            padding: 4.5rem 3.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .cta-link-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.1rem 1.4rem;
+            border: 1px solid var(--border);
+            background: white;
+            text-decoration: none;
+            color: var(--ink);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: all 0.2s;
+            border-radius: 2px;
+        }
+
+            .cta-link-row:hover {
+                background: var(--g1);
+                color: var(--lime);
+                border-color: var(--g1);
+            }
+
+            .cta-link-row i {
+                font-size: 0.75rem;
+            }
+
+        
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+            .fade-up.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+
+    </style>
+}
+@{
+    var UserRole = HttpContext.Session.GetString("Role");
+}
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-eyebrow">Chamoth Event Organizers</div>
+        <h1 class="hero-title">
+            Where Every<br>
+            Event Becomes<br>
+            <em>Extraordinary.</em>
+        </h1>
+        <p class="hero-body">
+            We plan, manage and execute memorable events — from intimate gatherings
+            to large-scale public experiences. Precision-crafted. Community-driven.
+        </p>
+        <div class="hero-actions">
+            <a href="/Eventst" class="btn-solid">
+                <i class="fa-solid fa-calendar-days"></i> View Events
+            </a>
+            <a href="/About" class="btn-outline">
+                <i class="fa-solid fa-circle-info"></i> Learn More
+            </a>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<section class="what-section fade-up">
+    <div class="what-inner">
+        <div>
+            <div class="what-label">What We Do</div>
+            <h2 class="what-heading">
+                Built for<br>
+                <em>every occasion,</em><br>
+                every scale.
+            </h2>
+        </div>
+        <ul class="what-list">
+            <li class="what-item" onclick="window.location='/OurEvents'" style="cursor:pointer;">
+                <span class="what-item-num">01</span>
+                <div class="what-item-body">
+                    <div class="what-item-title">Event Discovery</div>
+                    <div class="what-item-desc">Browse all upcoming events in one centralised platform — filtered by category, date and location.</div>
+                </div>
+                <i class="fa-solid fa-arrow-right what-item-arrow"></i>
+            </li>
+
+            <li class="what-item" onclick="openAuthModal('signup')" style="cursor:pointer;">
+                <span class="what-item-num">02</span>
+                <div class="what-item-body">
+                    <div class="what-item-title">Seamless Registration</div>
+                    <div class="what-item-desc">Register for any event in seconds — real-time capacity tracking ensures you always know your spot is secured.</div>
+                </div>
+                <i class="fa-solid fa-arrow-right what-item-arrow"></i>
+            </li>
+
+            @if (UserRole == "Organizer")
+            {
+                <li class="what-item" onclick="window.location='/EventDashboard'" style="cursor:pointer;">
+                    <span class="what-item-num">03</span>
+                    <div class="what-item-body">
+                        <div class="what-item-title">Organizer Management</div>
+                        <div class="what-item-desc">Full-featured dashboard for organizers to create, edit and monitor events with participant oversight.</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right what-item-arrow"></i>
+                </li>
+            }
+            else
+            {
+                <li class="what-item" onclick="openAuthModal('signup')" style="cursor:pointer;">
+                    <span class="what-item-num">03</span>
+                    <div class="what-item-body">
+                        <div class="what-item-title">Organizer Management</div>
+                        <div class="what-item-desc">Full-featured dashboard for organizers to create, edit and monitor events with participant oversight.</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right what-item-arrow"></i>
+                </li>
+            }
+
+            <li class="what-item" onclick="window.location='/OurEvents'" style="cursor:pointer;">
+                <span class="what-item-num">04</span>
+                <div class="what-item-body">
+                    <div class="what-item-title">Community Connection</div>
+                    <div class="what-item-desc">Bridging organizers and attendees through a trusted, transparent platform built for the community.</div>
+                </div>
+                <i class="fa-solid fa-arrow-right what-item-arrow"></i>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+<section class="cta-section fade-up">
+    <div class="cta-inner">
+        <div class="cta-left">
+            <div class="cta-left-tag">Get Involved</div>
+            <h2>Ready to be<br>part of <em>something?</em></h2>
+            <p>
+                Whether you're here to attend or to organise — this platform
+                gives you everything you need to make it happen.
+            </p>
+            <a href="/OurEvents" class="btn-solid" style="align-self:flex-start; display:inline-flex;">
+                <i class="fa-solid fa-calendar-days"></i> Browse All Events
+            </a>
+        </div>
+        <div class="cta-right">
+            <a href="/OurEvents" class="cta-link-row">
+                Browse Events <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="javascript:void(0)" onclick="openAuthModal('signin')" class="btn-solid">
+                <i class="fa-solid fa-right-to-bracket"></i> Sign In
+            </a>
+            <a href="/About" class="cta-link-row">
+                About Us <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    <script>
+        
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        
+        function animateCount(el) {
+            const target = parseInt(el.dataset.count);
+            const duration = 1800;
+            const step = target / (duration / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = target >= 1000
+                    ? Math.floor(current).toLocaleString()
+                    : Math.floor(current) + (target === 15 ? '+' : target === 120 ? '+' : target === 8 ? '' : '+');
+            }, 16);
+        }
+
+        const counterObserver = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    animateCount(e.target);
+                    counterObserver.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+    </script>
+}

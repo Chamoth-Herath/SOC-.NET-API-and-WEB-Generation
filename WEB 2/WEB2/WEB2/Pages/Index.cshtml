@@ -1,0 +1,218 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "KMC Events";
+}
+
+@section Styles {
+    <style>
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        body {
+            background: #fafafa;
+            color: #111;
+        }
+
+        
+        .home-hero {
+            padding: 70px 2rem 50px;
+            text-align: center;
+            background: linear-gradient(135deg, #6b1a1a 0%, #3d0f0f 100%);
+            color: #fff;
+        }
+
+            .home-hero h1 {
+                font-size: 2.5rem;
+                font-weight: 800;
+                margin-bottom: 12px;
+                letter-spacing: -0.5px;
+            }
+
+            .home-hero p {
+                font-size: 0.95rem;
+                color: rgba(255,255,255,0.75);
+                max-width: 500px;
+                margin: 0 auto 24px;
+            }
+
+            .home-hero a {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 26px;
+                background: #fff;
+                color: #6b1a1a;
+                font-weight: 600;
+                font-size: 0.9rem;
+                border-radius: 8px;
+                text-decoration: none;
+                transition: 0.2s;
+            }
+
+                .home-hero a:hover {
+                    background: #f3e8e8;
+                }
+
+        
+        .home-image {
+            max-width: 900px;
+
+            margin: -40px auto 40px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+            .home-image img {
+                width: 100%;
+                display: block;
+            }
+
+        
+        .home-features {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 2rem 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid #eee;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+            .feature-card:hover {
+                border-color: #6b1a1a;
+                box-shadow: 0 6px 20px rgba(107,26,26,0.08);
+            }
+
+            .feature-card i {
+                font-size: 1.6rem;
+                color: #6b1a1a;
+                margin-bottom: 12px;
+            }
+
+            .feature-card h3 {
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 6px;
+            }
+
+            .feature-card p {
+                font-size: 0.82rem;
+                color: #666;
+            }
+
+        
+        .home-cta {
+            text-align: center;
+            padding: 50px 2rem 80px;
+        }
+
+            .home-cta h2 {
+                font-size: 1.5rem;
+                font-weight: 800;
+                margin-bottom: 10px;
+            }
+
+            .home-cta p {
+                font-size: 0.9rem;
+                color: #666;
+                margin-bottom: 20px;
+            }
+
+            .home-cta a {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 26px;
+                background: #6b1a1a;
+                color: #fff;
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                text-decoration: none;
+            }
+
+                .home-cta a:hover {
+                    background: #8c2a2a;
+                }
+
+     
+    </style>
+}
+@{
+    
+    var _email = HttpContext.Session.GetString("Email");
+    var _role = HttpContext.Session.GetString("Role");
+   
+}
+
+<div class="home-hero">
+    <h1>KMC Event Platform</h1>
+    <p>
+        A centralized city-wide system to discover, manage, and participate in events across your community.
+    </p>
+    <a href="/KmcEvents">
+        <i class="fa-solid fa-calendar"></i> Explore Events
+    </a>
+</div>
+
+
+<div class="home-image">
+    <img src="/Pictures/kandy.jpg" alt="City Event">
+</div>
+
+
+<div class="home-features">
+
+    <div class="feature-card">
+        <i class="fa-solid fa-city"></i>
+        <h3>City-Wide Access</h3>
+        <p>Browse events happening across the entire city in one unified platform.</p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fa-solid fa-calendar-check"></i>
+        <h3>Easy Registration</h3>
+        <p>Register for events quickly with a simple and clean experience.</p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Real-Time Updates</h3>
+        <p>Stay informed with up-to-date schedules and event changes.</p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fa-solid fa-layer-group"></i>
+        <h3>Centralized System</h3>
+        <p>All organizers and events managed through one structured system.</p>
+    </div>
+
+</div>
+
+<div class="home-cta">
+    <h2>Start Creating Your Events</h2>
+    <p>Create your events as a event organizer and track your event through your provided dashbaord.</p>
+    @if (_role == "Organizer")
+    {
+        <a href="/KMCEventsDashbaord">
+            Manage Events
+        </a>
+    }
+    else
+    {
+        <a style="color:white; cursor:pointer;" onclick="openAuthModal('signin')">
+            Manage Events
+        </a>
+    }
+</div>

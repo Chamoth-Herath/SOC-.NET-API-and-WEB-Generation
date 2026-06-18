@@ -1,0 +1,202 @@
+﻿@page
+@model AboutKMCEvents
+@{
+    ViewData["Title"] = "About KMC Events";
+}
+
+@section Styles {
+    <style>
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        body {
+            background: #fafafa;
+            color: #111;
+        }
+
+      
+        .about-hero {
+            padding: 70px 2rem 50px;
+            text-align: center;
+            background: linear-gradient(135deg, #6b1a1a 0%, #3d0f0f 100%);
+            color: #fff;
+        }
+
+            .about-hero h1 {
+                font-size: 2.3rem;
+                font-weight: 800;
+                margin-bottom: 10px;
+            }
+
+            .about-hero p {
+                font-size: 0.95rem;
+                color: rgba(255,255,255,0.75);
+                max-width: 550px;
+                margin: 0 auto;
+            }
+
+      
+        .about-image {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+            .about-image img {
+                width: 100%;
+                display: block;
+            }
+
+       
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px 2rem 60px;
+            line-height: 1.7;
+        }
+
+            .about-content h2 {
+                font-size: 1.4rem;
+                font-weight: 800;
+                margin-bottom: 10px;
+            }
+
+            .about-content p {
+                font-size: 0.9rem;
+                color: #444;
+                margin-bottom: 18px;
+            }
+
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .about-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #eee;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+            .about-card:hover {
+                border-color: #6b1a1a;
+                box-shadow: 0 6px 20px rgba(107,26,26,0.08);
+            }
+
+            .about-card i {
+                font-size: 1.5rem;
+                color: #6b1a1a;
+                margin-bottom: 10px;
+            }
+
+            .about-card h3 {
+                font-size: 0.95rem;
+                font-weight: 700;
+                margin-bottom: 6px;
+            }
+
+            .about-card p {
+                font-size: 0.82rem;
+                color: #666;
+            }
+
+      
+        .about-cta {
+            text-align: center;
+            padding: 40px 2rem 80px;
+        }
+
+            .about-cta a {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 26px;
+                background: #6b1a1a;
+                color: #fff;
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                text-decoration: none;
+            }
+
+                .about-cta a:hover {
+                    background: #8c2a2a;
+                }
+
+        @@media (max-width: 600px) {
+            .about-hero h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+}
+
+
+<div class="about-hero">
+    <h1>About KMC Event Platform</h1>
+    <p>
+        A unified system designed to connect the city through organized, accessible, and well-managed events.
+    </p>
+</div>
+
+
+<div class="about-image">
+    <img src="/Pictures/about.jpg" alt="Maligawa Pic">
+</div>
+
+
+<div class="about-content">
+
+    <h2>Our Purpose</h2>
+    <p>
+        The KMC Event Platform, developed under the <strong>Kandy Municipal Council (KMC)</strong>, is a centralized digital system designed to manage and promote events across the city of <strong>Kandy</strong>.
+        It serves as a unified hub where citizens can easily discover, register for, and stay informed about activities happening throughout the city.
+    </p>
+
+    <p>
+        By bringing together multiple organizers under one structured platform, the system improves coordination,
+        enhances accessibility, and ensures a smooth experience for both event organizers and participants within Kandy.
+    </p>
+
+    <h2>What We Offer</h2>
+
+    <div class="about-grid">
+
+        <div class="about-card">
+            <i class="fa-solid fa-globe"></i>
+            <h3>City-Wide Access</h3>
+            <p>All events across Kandy are accessible in one centralized platform.</p>
+        </div>
+
+        <div class="about-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Community Engagement</h3>
+            <p>Encouraging participation and involvement among citizens of Kandy.</p>
+        </div>
+
+        <div class="about-card">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Efficient Management</h3>
+            <p>Supporting event organizers under KMC with better tools and coordination.</p>
+        </div>
+
+        <div class="about-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Reliable Platform</h3>
+            <p>A structured and dependable system backed by the Kandy Municipal Council.</p>
+        </div>
+
+    </div>
+
+</div>
+
+

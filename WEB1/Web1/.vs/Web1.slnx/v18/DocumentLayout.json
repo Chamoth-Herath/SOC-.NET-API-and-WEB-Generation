@@ -1,0 +1,415 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\myregistrations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\myregistrations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\myregistrations.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\myregistrations.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\ourevents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\ourevents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\ourevents.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\ourevents.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\eventdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\eventdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\eventdashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\eventdashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\shared\\_authmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\shared\\_authmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\shared\\_authmodal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\shared\\_authmodal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|c:\\users\\whiteaways\\desktop\\chamodsoc\\web1\\web1\\web1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FD56DA53-7DAF-75B2-52CA-4308115986EC}|Web1\\Web1.csproj|solutionrelative:web1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1013369848:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1909115015:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyRegistrations.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\MyRegistrations.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\MyRegistrations.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\MyRegistrations.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\MyRegistrations.cshtml",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAQwBABAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T13:50:09.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OurEvents.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\OurEvents.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\OurEvents.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\OurEvents.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\OurEvents.cshtml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwFgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:21:04.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:21:49.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OurEvents.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\OurEvents.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\OurEvents.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\OurEvents.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\OurEvents.cshtml",
+              "ViewState": "AgIAAPwBAAAAAAAAAAAAALQCAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T12:20:48.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\appsettings.json",
+              "RelativeDocumentMoniker": "Web1\\appsettings.json",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\appsettings.json",
+              "RelativeToolTip": "Web1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-05T17:24:09.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyRegistrations.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\MyRegistrations.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\MyRegistrations.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\MyRegistrations.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\MyRegistrations.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:50:32.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Program.cs",
+              "RelativeDocumentMoniker": "Web1\\Program.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Program.cs",
+              "RelativeToolTip": "Web1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T06:01:54.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\EventDashboard.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\EventDashboard.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\EventDashboard.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\EventDashboard.cshtml",
+              "ViewState": "AgIAABAEAAAAAAAAAAAAwCEEAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T18:45:57.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAOsCAAAAAAAAAAAAAOcCAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T07:28:37.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventDashboard.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\EventDashboard.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\EventDashboard.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\EventDashboard.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\EventDashboard.cshtml.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwKUAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T18:46:22.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Register.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Register.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Register.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T13:26:00.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\About.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\About.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\About.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\About.cshtml",
+              "ViewState": "AgIAANwBAAAAAAAAAAAAAN8BAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T07:29:35.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAKkBAAAAAAAAAAAAALoBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T06:02:53.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_AuthModal.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Shared\\_AuthModal.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Shared\\_AuthModal.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Shared\\_AuthModal.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\Shared\\_AuthModal.cshtml",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAAAAIBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T07:43:44.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Signup.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signup.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Signup.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signup.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\Signup.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T07:38:27.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Signin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signin.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Signin.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signin.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\Signin.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwDEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T07:37:58.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Signup.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signup.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Signup.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signup.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\Signup.cshtml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T07:38:37.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_AuthModal.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Shared\\_AuthModal.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Shared\\_AuthModal.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Shared\\_AuthModal.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\Shared\\_AuthModal.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:00:05.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Register.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\Register.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:26:08.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "Web1\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:39:32.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Logout.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T12:39:30.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Signin.cshtml",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signin.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Pages\\Signin.cshtml",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Pages\\Signin.cshtml",
+              "RelativeToolTip": "Web1\\Pages\\Signin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-29T07:35:54.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Web1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\WHITEAWAYS\\Desktop\\ChamodSOC\\WEB1\\Web1\\Web1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Web1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-29T06:01:44.473Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

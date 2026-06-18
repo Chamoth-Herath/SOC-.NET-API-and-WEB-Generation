@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KMC Events</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="icon" href="/Pictures/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        * { font-family: 'DM Sans', sans-serif; }
+
+        :root {
+            --maroon:      #6b1a1a;
+            --maroon-dark: #4a1010;
+            --maroon-mid:  #8b2a2a;
+            --maroon-soft: rgba(107,26,26,0.08);
+            --maroon-lite: rgba(107,26,26,0.15);
+            --cream:       #fdf8f5;
+            --ink:         #1a0a0a;
+            --muted:       #8a6060;
+            --border:      rgba(107,26,26,0.12);
+        }
+
+        
+        .kmc-nav {
+            background: var(--maroon-dark);
+            padding: 0 2.5rem;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+
+        .kmc-brand {
+            text-decoration: none;
+            flex-shrink: 0;
+            font-family:'Sans Serif Collection';
+        }
+        .kmc-brand span{
+                font-family: 'Sans Serif Collection';
+        }
+
+        .kmc-brand-main {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+            line-height: 1.1;
+        }
+
+        .kmc-brand-sub {
+            font-size: 0.56rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.4);
+            display: block;
+        }
+
+        .kmc-nav-right {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-left: auto;
+        }
+
+        .kmc-nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .kmc-nav-links a {
+            position: relative;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+
+        .kmc-nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 14px; right: 14px;
+            height: 1.5px;
+            background: rgba(255,200,200,0.6);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.22s ease;
+        }
+
+        .kmc-nav-links a:hover { color: white; }
+        .kmc-nav-links a:hover::after { transform: scaleX(1); }
+        .kmc-nav-links a.active { color: white; font-weight: 600; }
+        .kmc-nav-links a.active::after { transform: scaleX(1); }
+
+        .nav-divider {
+            width: 1px;
+            height: 20px;
+            background: rgba(255,255,255,0.15);
+            margin: 0 10px;
+            flex-shrink: 0;
+        }
+
+
+
+        .kmc-user-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.12);
+            border: 1.5px solid rgba(255,255,255,0.22);
+            color: white;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            margin-left: 8px;
+        }
+
+        .kmc-user-btn:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.4);
+        }
+
+        
+        .kmc-user-menu {
+            position: relative;
+        }
+
+        .kmc-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 10px);
+            right: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(107,26,26,0.18);
+            min-width: 200px;
+            overflow: hidden;
+            z-index: 1100;
+            border: 1px solid var(--border);
+            animation: dropDown 0.18s ease;
+        }
+
+        .kmc-user-menu.open .kmc-dropdown { display: block; }
+
+        @@keyframes dropDown {
+            from { opacity: 0; transform: translateY(-6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .kmc-drop-header {
+            padding: 14px 16px 10px;
+            border-bottom: 1px solid #f5f0f0;
+        }
+
+        .kmc-drop-name {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--maroon-dark);
+        }
+
+        .kmc-drop-role {
+            font-size: 0.68rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .kmc-drop-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 16px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            transition: background 0.15s;
+            cursor: pointer;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .kmc-drop-item:hover { background: #fdf5f5; color: var(--maroon); }
+        .kmc-drop-item i { font-size: 0.78rem; color: #aaa; width: 14px; }
+        .kmc-drop-item:hover i { color: var(--maroon); }
+
+        .kmc-drop-divider { height: 1px; background: #f5f0f0; }
+
+        .kmc-drop-logout { color: var(--maroon); }
+        .kmc-drop-logout:hover { background: #fef2f2; }
+        .kmc-drop-logout i { color: var(--maroon); }
+
+        
+        .btn-nav-signin {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.22);
+            color: white;
+            border-radius: 8px;
+            padding: 8px 18px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-left: 8px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .btn-nav-signin:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.4);
+        }
+
+        
+        html, body { height: 100%; margin: 0; }
+        body { display: flex; flex-direction: column; min-height: 100vh; background: var(--cream); }
+        main { margin-top: 68px; flex: 1 0 auto; }
+
+        
+        .kmc-footer {
+            flex-shrink: 0;
+            background: var(--maroon-dark);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 0 2.5rem;
+            height: 48px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-inner {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-brand {
+            font-family:'Sans Serif Collection';
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            white-space: nowrap;
+        }
+
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+
+        .footer-nav {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-nav a {
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 4px 10px;
+            transition: color 0.18s;
+        }
+
+        .footer-nav a:hover { color: rgba(255,255,255,0.8); }
+
+        .footer-sep {
+            color: rgba(255,255,255,0.15);
+            font-size: 0.6rem;
+        }
+
+        .footer-copy {
+            font-size: 0.66rem;
+            color: rgba(255,255,255,0.22);
+            white-space: nowrap;
+            border-left: 1px solid rgba(255,255,255,0.1);
+            padding-left: 1.2rem;
+            margin-left: 1.2rem;
+        }
+
+        .kmc-hamburger {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.3rem;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+
+        @@media (max-width: 768px) {
+            .kmc-nav { padding: 0 1rem; }
+            .kmc-nav-links { display: none; }
+            .kmc-hamburger { display: block; }
+            .kmc-footer { height: auto; padding: 0.75rem 1rem; }
+            .footer-inner { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+            .footer-copy { border-left: none; padding-left: 0; margin-left: 0; }
+        }
+    </style>
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+
+    @{
+        var _fullName = Context.Session.GetString("FullName");
+        var _email = Context.Session.GetString("Email");
+        var _role = Context.Session.GetString("Role");
+        var _loggedIn = !string.IsNullOrEmpty(_role);
+    }
+
+    @await Html.PartialAsync("_AuthModal")
+
+    
+    <nav class="kmc-nav">
+        <a href="/" class="kmc-brand">
+            <span class="kmc-brand-main">KMC Events</span>
+            <span class="kmc-brand-sub">Municipal Event Platform</span>
+        </a>
+
+        <div class="kmc-nav-right">
+            <ul class="kmc-nav-links" id="navLinks">
+                <li><a href="/" id="nav-home">Home</a></li>
+                <li><a href="/KMCEvents" id="nav-events">Browse Events</a></li>
+                <li><a href="/AboutKMCEvents" id="nav-about">About</a></li>
+            </ul>
+
+            <div class="nav-divider"></div>
+
+            @if (_loggedIn)
+            {
+                <div class="kmc-user-menu" id="userMenuWrapper">
+                    <button class="kmc-user-btn" onclick="toggleUserMenu(event)" title="@_fullName">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <div class="kmc-dropdown">
+                        <div class="kmc-drop-header">
+                            <div class="kmc-drop-name">@(_fullName ?? _email)</div>
+                            <div class="kmc-drop-role">@_role</div>
+                        </div>
+                        @if (_role == "Organizer")
+                        {
+                            <a href="/KmcOrganizerDashboard" class="kmc-drop-item">
+                                <i class="fa-solid fa-gauge"></i> My Dashboard
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="/KMCMyRegistrations" class="kmc-drop-item">
+                                <i class="fa-solid fa-calendar-check"></i> My Registrations
+                            </a>
+                        }
+                        <div class="kmc-drop-divider"></div>
+                        <a href="/Signin?handler=Logout" class="kmc-drop-item kmc-drop-logout">
+                            <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <button class="btn-nav-signin" onclick="openAuthModal('signin')">
+                    <i class="fa-solid fa-circle-user"></i> Sign In
+                </button>
+            }
+        </div>
+
+        <button class="kmc-hamburger" onclick="toggleMobileNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+   
+    <footer class="kmc-footer">
+        <div class="footer-inner">
+            <span class="footer-brand">KMC Events</span>
+            <div class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><span class="footer-sep">|</span></li>
+                    <li><a href="/KMCEvents">Browse Events</a></li>
+                    <li><span class="footer-sep">|</span></li>
+                    <li><a href="/About">About</a></li>
+                </ul>
+                <div class="footer-copy">&copy; 2026 Kandy Municipal Council</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+      
+        const path = window.location.pathname.toLowerCase();
+        const navMap = { '/': 'nav-home', '/kmcevents': 'nav-events', '/about': 'nav-about' };
+        const activeId = navMap[path];
+        if (activeId) document.getElementById(activeId)?.classList.add('active');
+
+        
+        function toggleUserMenu(e) {
+            e.stopPropagation();
+            document.getElementById('userMenuWrapper')?.classList.toggle('open');
+        }
+        document.addEventListener('click', () => {
+            document.getElementById('userMenuWrapper')?.classList.remove('open');
+        });
+
+        
+        function toggleMobileNav() {
+            const links = document.getElementById('navLinks');
+            const isOpen = links.style.display === 'flex';
+            links.style.display = isOpen ? 'none' : 'flex';
+            if (!isOpen) {
+                links.style.flexDirection = 'column';
+                links.style.position = 'absolute';
+                links.style.top = '68px';
+                links.style.left = '0'; links.style.right = '0';
+                links.style.background = '#4a1010';
+                links.style.padding = '1rem 2rem';
+                links.style.borderTop = '1px solid rgba(255,255,255,0.08)';
+            }
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

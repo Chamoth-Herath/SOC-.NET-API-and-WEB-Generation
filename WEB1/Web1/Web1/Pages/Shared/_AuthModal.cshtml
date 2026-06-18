@@ -1,0 +1,500 @@
+﻿<style>
+    #authOverlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.55);
+        backdrop-filter: blur(4px);
+        z-index: 2000;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #authOverlay.open {
+            display: flex;
+        }
+
+    .auth-card {
+        background: #fff;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 460px;
+        box-shadow: 0 24px 64px rgba(0,0,0,0.22);
+        overflow: hidden;
+        animation: slideUp 0.28s cubic-bezier(0.34,1.56,0.64,1);
+        position: relative;
+        font-family: 'Sans Serif Collection', sans-serif;
+    }
+
+    @@keyframes slideUp {
+        from {
+            transform: translateY(32px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .auth-close {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        background: none;
+        border: none;
+        font-size: 1.3rem;
+        color: #999;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+        .auth-close:hover {
+            color: #333;
+        }
+
+    .auth-tabs {
+        display: flex;
+        border-bottom: 2px solid #f0f0f0;
+    }
+
+    .auth-tab {
+        flex: 1;
+        padding: 18px 0 16px;
+        text-align: center;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #aaa;
+        cursor: pointer;
+        border: none;
+        background: none;
+        border-bottom: 3px solid transparent;
+        margin-bottom: -2px;
+        transition: color 0.2s, border-color 0.2s;
+        font-family: 'Sans Serif Collection', sans-serif;
+    }
+
+        .auth-tab.active {
+            color: #0f3d1f;
+            border-bottom-color: #0f3d1f;
+        }
+
+    .auth-panels {
+        padding: 28px 36px 32px;
+    }
+
+    .auth-panel {
+        display: none;
+    }
+
+        .auth-panel.active {
+            display: block;
+        }
+
+        .auth-panel h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0f3d1f;
+            margin: 0 0 4px;
+        }
+
+        .auth-panel p.sub {
+            font-size: 0.82rem;
+            color: #888;
+            margin: 0 0 22px;
+        }
+
+    .role-toggle {
+        display: flex;
+        background: #f5f5f5;
+        border-radius: 10px;
+        padding: 4px;
+        gap: 4px;
+        margin-bottom: 20px;
+    }
+
+    .role-btn {
+        flex: 1;
+        padding: 8px 0;
+        border-radius: 8px;
+        border: none;
+        background: transparent;
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #999;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        font-family: 'Sans Serif Collection', sans-serif;
+    }
+
+        .role-btn.active {
+            background: #fff;
+            color: #0f3d1f;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+        }
+
+    .auth-group {
+        margin-bottom: 14px;
+    }
+
+        .auth-group label {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .auth-group input {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1.5px solid #e4e4e4;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #222;
+            background: #fafafa;
+            outline: none;
+            transition: border-color 0.2s, background 0.2s;
+            box-sizing: border-box;
+            font-family: 'Sans Serif Collection', sans-serif;
+        }
+
+            .auth-group input:focus {
+                border-color: #0f3d1f;
+                background: #fff;
+            }
+
+    .auth-message {
+        display: none;
+        padding: 10px 14px;
+        border-radius: 9px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+
+        .auth-message.error {
+            background: #fef2f2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            display: block;
+        }
+
+        .auth-message.success {
+            background: #f0fdf4;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            display: block;
+        }
+
+    .auth-submit {
+        width: 100%;
+        padding: 12px;
+        background: #0f3d1f;
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 11px;
+        cursor: pointer;
+        margin-top: 6px;
+        transition: background 0.2s, transform 0.15s;
+        font-family: 'Sans Serif Collection', sans-serif;
+    }
+
+        .auth-submit:hover {
+            background: #1a5c30;
+        }
+
+        .auth-submit:active {
+            transform: scale(0.98);
+        }
+
+        .auth-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+    .auth-switch {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #888;
+        margin-top: 16px;
+    }
+
+        .auth-switch a {
+            color: #0f3d1f;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+            .auth-switch a:hover {
+                text-decoration: underline;
+            }
+
+    .spinner {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 2px solid rgba(255,255,255,0.4);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin 0.6s linear infinite;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+
+    @@keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div id="authOverlay">
+    <div class="auth-card">
+        <button class="auth-close" onclick="closeAuthModal()">&times;</button>
+
+        <div class="auth-tabs">
+            <button class="auth-tab active" id="tab-signin" onclick="switchTab('signin')">Sign In</button>
+            <button class="auth-tab" id="tab-signup" onclick="switchTab('signup')">Sign Up</button>
+        </div>
+
+        <div class="auth-panels">
+
+            <!-- SIGN IN -->
+            <div class="auth-panel active" id="panel-signin">
+                <h2>Welcome back</h2>
+                <p class="sub">Sign in to your account to continue</p>
+                <div class="role-toggle">
+                    <button class="role-btn active" id="si-role-citizen" onclick="setSignInRole('Citizen')">
+                        <i class="fa-solid fa-user" style="font-size:0.75rem"></i> Citizen
+                    </button>
+                    <button class="role-btn" id="si-role-organizer" onclick="setSignInRole('Organizer')">
+                        <i class="fa-solid fa-id-badge" style="font-size:0.75rem"></i> Organizer
+                    </button>
+                </div>
+                <div class="auth-message" id="signin-msg"></div>
+                <div class="auth-group">
+                    <label>Email</label>
+                    <input type="email" id="si-email" placeholder="you@example.com" />
+                </div>
+                <div class="auth-group">
+                    <label>Password</label>
+                    <input type="password" id="si-password" placeholder="••••••••" />
+                </div>
+                <button class="auth-submit" id="si-btn" onclick="handleSignIn()">Sign In</button>
+                <div class="auth-switch">
+                    Don't have an account? <a onclick="switchTab('signup')">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- SIGN UP -->
+            <div class="auth-panel" id="panel-signup">
+                <h2>Create account</h2>
+                <p class="sub">Join us — it only takes a minute</p>
+                <div class="role-toggle">
+                    <button class="role-btn active" id="su-role-citizen" onclick="setSignUpRole('Citizen')">
+                        <i class="fa-solid fa-user" style="font-size:0.75rem"></i> Citizen
+                    </button>
+                </div>
+                <div class="auth-message" id="signup-msg"></div>
+                <div class="auth-group">
+                    <label>Full Name</label>
+                    <input type="text" id="su-name" placeholder="John Doe" />
+                </div>
+                <div class="auth-group">
+                    <label>Email</label>
+                    <input type="email" id="su-email" placeholder="you@example.com" />
+                </div>
+                <div class="auth-group" id="su-phone-group">
+                    <label>Phone</label>
+                    <input type="tel" id="su-phone" placeholder="+94 77 123 4567" />
+                </div>
+                <div class="auth-group" id="su-org-group" style="display:none">
+                    <label>Organization Name</label>
+                    <input type="text" id="su-org" placeholder="Your organization" />
+                </div>
+                <div class="auth-group">
+                    <label>Password</label>
+                    <input type="password" id="su-password" placeholder="Create a password" />
+                </div>
+                <button class="auth-submit" id="su-btn" onclick="handleSignUp()">Create Account</button>
+                <div class="auth-switch">
+                    Already have an account? <a onclick="switchTab('signin')">Sign In</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    let siRole = 'Citizen';
+    let suRole = 'Citizen';
+
+    function openAuthModal(tab) {
+        document.getElementById('authOverlay').classList.add('open');
+        switchTab(tab || 'signin');
+        clearMessages();
+    }
+    function closeAuthModal() {
+        document.getElementById('authOverlay').classList.remove('open');
+        clearMessages();
+        clearInputs();
+    }
+    document.getElementById('authOverlay').addEventListener('click', function(e) {
+        if (e.target === this) closeAuthModal();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAuthModal(); });
+
+    function switchTab(tab) {
+        ['signin','signup'].forEach(t => {
+            document.getElementById('panel-' + t).classList.toggle('active', t === tab);
+            document.getElementById('tab-'    + t).classList.toggle('active', t === tab);
+        });
+        clearMessages();
+    }
+
+    function setSignInRole(role) {
+        siRole = role;
+        document.getElementById('si-role-citizen'  ).classList.toggle('active', role === 'Citizen');
+        document.getElementById('si-role-organizer').classList.toggle('active', role === 'Organizer');
+    }
+    function setSignUpRole(role) {
+        suRole = role;
+        document.getElementById('su-role-citizen'  ).classList.toggle('active', role === 'Citizen');
+        document.getElementById('su-role-organizer').classList.toggle('active', role === 'Organizer');
+        document.getElementById('su-phone-group').style.display = role === 'Citizen'   ? '' : 'none';
+        document.getElementById('su-org-group'  ).style.display = role === 'Organizer' ? '' : 'none';
+    }
+
+    function showMsg(id, type, text) {
+        const msgEl = document.getElementById(id);
+        msgEl.className   = 'auth-message ' + type;
+        msgEl.textContent = text;
+    }
+    function clearMessages() {
+        ['signin-msg','signup-msg'].forEach(id => {
+            const msgEl = document.getElementById(id);
+            msgEl.className   = 'auth-message';
+            msgEl.textContent = '';
+        });
+    }
+    function clearInputs() {
+        ['si-email','si-password','su-name','su-email','su-phone','su-org','su-password']
+            .forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+    }
+    function setLoading(btnId, loading, defaultLabel) {
+        const btnEl     = document.getElementById(btnId);
+        btnEl.disabled  = loading;
+        btnEl.innerHTML = loading ? '<span class="spinner"></span>Please wait…' : defaultLabel;
+    }
+
+    async function handleSignIn() {
+        const typedEmail    = document.getElementById('si-email').value.trim();
+        const typedPassword = document.getElementById('si-password').value;
+
+        if (!typedEmail || !typedPassword) {
+            showMsg('signin-msg', 'error', 'Please fill in all fields.');
+            return;
+        }
+        setLoading('si-btn', true, 'Sign In');
+        try {
+            const tokenEl = document.querySelector('input[name="__RequestVerificationToken"]');
+            const token   = tokenEl ? tokenEl.value : '';
+
+            const formData = new FormData();
+            formData.append('__RequestVerificationToken', token);
+            formData.append('typedEmail',    typedEmail);
+            formData.append('typedPassword', typedPassword);
+            formData.append('selectedRole',  siRole);
+
+            const signinCall = await fetch('/Signin', {
+                method:  'POST',
+                headers: { 'RequestVerificationToken': token },
+                body:    formData
+            });
+
+            if (!signinCall.ok) {
+                showMsg('signin-msg', 'error', 'Server error: ' + signinCall.status);
+                return;
+            }
+
+            const signinOutcome = await signinCall.json();
+            if (!signinOutcome.ok) {
+                showMsg('signin-msg', 'error', signinOutcome.message || 'Invalid email or password.');
+                return;
+            }
+            showMsg('signin-msg', 'success', 'Signed in! Redirecting…');
+            setTimeout(() => { closeAuthModal(); location.reload(); }, 800);
+
+        } catch(err) {
+            showMsg('signin-msg', 'error', 'Could not reach the server: ' + err.message);
+        } finally {
+            setLoading('si-btn', false, 'Sign In');
+        }
+    }
+
+    async function handleSignUp() {
+        const enteredName     = document.getElementById('su-name').value.trim();
+        const enteredEmail    = document.getElementById('su-email').value.trim();
+        const enteredPassword = document.getElementById('su-password').value;
+        const enteredPhone    = document.getElementById('su-phone').value.trim();
+        const enteredOrg      = document.getElementById('su-org').value.trim();
+
+        if (!enteredName || !enteredEmail || !enteredPassword) {
+            showMsg('signup-msg', 'error', 'Name, email and password are required.');
+            return;
+        }
+        if (suRole === 'Citizen'   && !enteredPhone) { showMsg('signup-msg', 'error', 'Phone number is required.');       return; }
+        if (suRole === 'Organizer' && !enteredOrg)   { showMsg('signup-msg', 'error', 'Organization name is required.'); return; }
+
+        setLoading('su-btn', true, 'Create Account');
+        try {
+            const tokenEl = document.querySelector('input[name="__RequestVerificationToken"]');
+            const token   = tokenEl ? tokenEl.value : '';
+
+            const formData = new FormData();
+            formData.append('__RequestVerificationToken', token);
+            formData.append('enteredName',     enteredName);
+            formData.append('enteredEmail',    enteredEmail);
+            formData.append('enteredPassword', enteredPassword);
+            formData.append('enteredPhone',    enteredPhone);
+            formData.append('enteredOrg',      enteredOrg);
+            formData.append('selectedRole',    suRole);
+
+            const signupCall = await fetch('/Signup', {
+                method:  'POST',
+                headers: { 'RequestVerificationToken': token },
+                body:    formData
+            });
+
+            if (!signupCall.ok) {
+                showMsg('signup-msg', 'error', 'Server error: ' + signupCall.status);
+                return;
+            }
+
+            const signupOutcome = await signupCall.json();
+            if (!signupOutcome.ok) {
+                showMsg('signup-msg', 'error', signupOutcome.message || 'Registration failed.');
+                return;
+            }
+            showMsg('signup-msg', 'success', 'Account created! Loading…');
+            setTimeout(() => { closeAuthModal(); location.reload(); }, 900);
+
+        } catch(err) {
+            showMsg('signup-msg', 'error', 'Could not reach the server: ' + err.message);
+        } finally {
+            setLoading('su-btn', false, 'Create Account');
+        }
+    }
+</script>
